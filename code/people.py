@@ -1,5 +1,4 @@
 # exerises for lists and dictonaries
-
 p0 = { 'username': 'paul',
            'first':  'paul',
            'last':   'douglas',
@@ -50,4 +49,6 @@ users = {
 print('-------------------------')
 print('USERS-------------------')
 for uname, userinfo in users.items():
-    print(userinfo['favs'])
+    print( f"user {userinfo['first']} {userinfo['last']}  has favorite {userinfo['favs']}  ")
+
+
