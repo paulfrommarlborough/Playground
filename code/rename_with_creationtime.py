@@ -15,7 +15,7 @@ for cfile in ofiles:
     fp_cfile1 = f"{mypath}\\{cfile}"
     created = os.path.getmtime(fp_cfile1)
     current_dm = datetime.fromtimestamp(created).strftime("20%y%m%d") 
-    newfile = f"{filecount:05d}_xh_{current_dm}.jpg"
+    newfile = f"xh_{filecount:05d}_{current_dm}.jpg"
     print(f"File: {cfile}  Date created: {time.ctime(created)}")
     filecount = filecount + 1   
     fp_newfile = f"{mypath}\\{newfile}" 
