@@ -13,7 +13,7 @@ class resturant:
         print(f"restuarant genre { self.capacity}")
         
 
-resturants = [];
+resturants = []
 
 r = resturant('joes', 'diner', 12)
 resturants.append(r)
@@ -24,5 +24,5 @@ resturants.append(r)
 r = resturant('wellys', 'american', 33)
 resturants.append(r)
 
-while 
-r.describe_resturant()
+for r in resturants:
+    r.describe_resturant()
