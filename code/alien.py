@@ -1,3 +1,5 @@
+# dictonarys and lists    with for loops
+
 alien_colors = [ 'green', 'yellow', 'red']
 
 ac = 'redx'
@@ -18,6 +20,9 @@ else:
 
     print(alien_0)
 
+    c = 'Purple'
+    if c.lower() not in alien_colors:
+        print(f"{c} is not a valid alien color")
 
     alien_0['position_x'] = 0
     alien_0['position_y'] = 25

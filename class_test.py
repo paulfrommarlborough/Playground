@@ -15,7 +15,7 @@ class resturant:
 
 resturants = []
 
-r = resturant('joes', 'diner', 12)
+r = resturant ('joes', 'diner', 12)
 resturants.append(r)
 
 r = resturant('papa ginos', 'pizza', 52)
@@ -24,5 +24,14 @@ resturants.append(r)
 r = resturant('wellys', 'american', 33)
 resturants.append(r)
 
+print("---------------------------------")
+print('for loop...')
 for r in resturants:
     r.describe_resturant()
+
+print("---------------------------------")
+print('for while...')
+
+while resturants:
+    r.describe_resturant()
+    r = resturants.pop()

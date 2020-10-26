@@ -21,6 +21,9 @@ willie = dog('willie', 5)
 willie.sit()
 lucy = dog('lucy', 2)
 
+sidney = dog('sidney', 3)
+
 
 willie.doing()
 lucy.doing()
+sidney.doing()
