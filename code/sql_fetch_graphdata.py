@@ -6,7 +6,20 @@
 
 import pyodbc
 import csv
-
+ 
+def GetLabelAndValues(graphdata):
+    RetList = [] 
+    l = graphdata.split("'")
+    label = l[1]
+    values = l[2]
+    RetList.append(label)
+    RetList.append(values)
+    print(RetList)
+    return RetList
+    
+#===================================
+# main
+#===================================
 
 print ("try pyodbc...")
 database_connect_properties = ['{ODBC Driver 17 for SQL Server}', 'tcp:192.168.5.153,1433', 'pawz', 'PAWZDSN', 'LuapJarusEiddam+1']
@@ -43,9 +56,13 @@ for row in rs:
     sql = f'select * from graphdata where timeid = {timeid} and graphid=110'
     cursor2.execute(sql)
     rs2=cursor2.fetchall()
+    label=""
+    values=""
     for r in rs2:
         graphdata = r[8]
-        print(f'graphdata { graphdata }')
+        RetList =GetLabelAndValues(graphdata)
+        print(f"RL label = {RetList[0]}")
+        print(f"RL values = {RetList[1]}")
 
     cursor2.close()
     del (cursor2)
