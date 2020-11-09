@@ -13,3 +13,7 @@ cubes = [ value ** 3 for value in range (1, 100)]
 #cubes.append(12)
 cubes.sort(reverse=True)
 print (cubes[1:10])
+
+
+intervals = [val for val in range(0,1440)]
+print(intervals)

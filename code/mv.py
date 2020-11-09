@@ -7,14 +7,12 @@ from os.path import  isfile,join
 from datetime import datetime
 
 now = datetime.now()
-
 current_dm = now.strftime("20%y%m%d")
 
 mypath = 'C:\\paul\\temp'
 ofiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 filecount = 1
 for cfile in ofiles:
-    fx = f'_xh_{0}.jpg'.format(current_dm)
     newfile = f"{filecount:05d}_xh_{current_dm}_.jpg"
     msg = f"os.rename({cfile},{newfile})"
     filecount = filecount + 1
