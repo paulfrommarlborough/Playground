@@ -1,3 +1,4 @@
+"""  die_class.py : excerise to code  a class """
 from random import randint 
 
 class die:
