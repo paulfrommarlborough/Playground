@@ -1,3 +1,4 @@
+""" settings class for the flyrocket app """
 class Settings:
     def __init__(self):
         """ initilaize settings """
