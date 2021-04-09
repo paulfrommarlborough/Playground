@@ -3,6 +3,8 @@
        cd python\scripts
        pip install pyodbc  
 """
+# is sample py odbc  - with graphing in matplotlib
+
 
 import pyodbc
 import csv
@@ -23,7 +25,7 @@ def GetLabelAndValues(graphdata):
 #===================================
 
 print ("try pyodbc...")
-database_connect_properties = ['{ODBC Driver 17 for SQL Server}', 'tcp:192.168.5.153,1433', 'pawz', 'PAWZDSN', 'LuapJarusEiddam+1']
+database_connect_properties = ['{ODBC Driver 17 for SQL Server}', 'tcp:192.168.5.158,1433', 'pawz', 'PAWZDSN', 'LuapJarusEiddam+1']
 connect_str =  'DRIVER=' + database_connect_properties[0] + ';SERVER=' + database_connect_properties[1] + ';DATABASE=' + database_connect_properties[2]+ ';UID=' + database_connect_properties[3]+';PWD='+database_connect_properties[4] 
 
 print (database_connect_properties)

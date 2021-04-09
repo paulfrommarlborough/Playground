@@ -1,3 +1,7 @@
+#
+# WARNING : puts zip to screen as a scramble
+#
+
 import pycurl
 
 from io import StringIO
