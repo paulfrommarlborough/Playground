@@ -1,4 +1,4 @@
-# FUNCTION
+# album.py
 
 def make_album(album_title, album_artist, album_label, album_songs):
     album_info = { 'title': album_title,
