@@ -9,7 +9,7 @@ from datetime import datetime
 
 mypath = 'C:\\paul\\temp'
 ofiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-filecount = 1
+filecount = 10
 
 for cfile in ofiles:
     fp_cfile1 = f"{mypath}\\{cfile}"
