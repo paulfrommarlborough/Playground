@@ -1,0 +1,17 @@
+cp arithoh ub_arithoh
+cp dhry2reg ub_dhry2reg 
+cp double ub_double
+cp execl ub_execl
+cp float ub_float
+cp fsbuffer ub_fsbuffer
+cp fsdisk ub_fsdisk
+cp fstime ub_fstime
+cp hanoi ub_hanoi
+cp int ub_int
+cp long ub_long
+cp looper ub_looper
+cp pipe ub_pipe
+cp register ub_register
+cp short ub_short
+cp spawn ub_spawn
+cp syscall ub_syscall

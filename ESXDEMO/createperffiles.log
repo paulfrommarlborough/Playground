@@ -1,0 +1,1669 @@
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc1_host1
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc1_host1
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc1_host1_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc1_host1_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc1_host1_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc1_host1_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc1_host1_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc1.host1.g00
+arg 6  is -replace
+arg 7  is vAgua,dc1.host1.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc1.host1.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc1.host1.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc1.host1.g04
+arg 14  is -replace
+arg 15  is vMoto,dc1.host1.g05
+arg 16  is -replace
+arg 17  is vNoir,dc1.host1.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc1.host1.g07
+arg 20  is -replace
+arg 21  is vThales,dc1.host1.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc1.host1.g09
+InFile:  .\output_perf\dc1_host1_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc1_host1_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc1.host1.g00
+Replace:  vAgua  with  dc1.host1.g01
+Replace:  vCoreAP1  with  dc1.host1.g02
+Replace:  vCoreDB1  with  dc1.host1.g03
+Replace:  vEuclid  with  dc1.host1.g04
+Replace:  vMoto  with  dc1.host1.g05
+Replace:  vNoir  with  dc1.host1.g06
+Replace:  vSolaris10  with  dc1.host1.g07
+Replace:  vThales  with  dc1.host1.g08
+Replace:  vTmMonitor  with  dc1.host1.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc1_host2
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc1_host2
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc1_host2_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc1_host2_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc1_host2_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc1_host2_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc1_host2_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc1.host2.g00
+arg 6  is -replace
+arg 7  is vAgua,dc1.host2.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc1.host2.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc1.host2.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc1.host2.g04
+arg 14  is -replace
+arg 15  is vMoto,dc1.host2.g05
+arg 16  is -replace
+arg 17  is vNoir,dc1.host2.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc1.host2.g07
+arg 20  is -replace
+arg 21  is vThales,dc1.host2.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc1.host2.g09
+InFile:  .\output_perf\dc1_host2_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc1_host2_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc1.host2.g00
+Replace:  vAgua  with  dc1.host2.g01
+Replace:  vCoreAP1  with  dc1.host2.g02
+Replace:  vCoreDB1  with  dc1.host2.g03
+Replace:  vEuclid  with  dc1.host2.g04
+Replace:  vMoto  with  dc1.host2.g05
+Replace:  vNoir  with  dc1.host2.g06
+Replace:  vSolaris10  with  dc1.host2.g07
+Replace:  vThales  with  dc1.host2.g08
+Replace:  vTmMonitor  with  dc1.host2.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc1_host3
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\vsphere01_2021Apr14_0802.merg
+arg 10  is -mhost
+arg 11  is vsphere01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\vsphere01_2013Jan31_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\vsphere01_2020Feb19_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc1_host3
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\vsphere01_2013Jan31_0000.perf
+    MERG:          .\input_merg\vsphere01_2021Apr14_0802.merg
+    CONFIG:        .\input_config\vsphere01_2020Feb19_0546_config.txt
+    MERG_HOST_IN:  vsphere01
+   Create .\output_perf\dc1_host3_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc1_host3_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc1_host3_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc1_host3_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc1_host3_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is oracleLinux64,dc1.host3.g00
+arg 6  is -replace
+arg 7  is pawzESX,dc1.host3.g01
+arg 8  is -replace
+arg 9  is pawzV92,dc1.host3.g02
+arg 10  is -replace
+arg 11  is testsql2012,dc1.host3.g03
+arg 12  is -replace
+arg 13  is testsql2012,dc1.host3.g04
+arg 14  is -replace
+arg 15  is ubuntu64,dc1.host3.g05
+arg 16  is -replace
+arg 17  is vs01w2k3r2x32us,dc1.host3.g06
+arg 18  is -replace
+arg 19  is vs01w2k3x6401,dc1.host3.g07
+arg 20  is -replace
+arg 21  is staging1,dc1.host3.g09
+arg 22  is -replace
+arg 23  is staging2,dc1.host3.g10
+arg 24  is -replace
+arg 25  is staging3,dc1.host3.g11
+arg 26  is -replace
+arg 27  is staging,dc1.host3.g12
+arg 28  is -replace
+arg 29  is vs01Win7,dc1.host3.g13
+arg 30  is -replace
+arg 31  is vs01w2k3x6403_32,dc1.host3.g08
+InFile:  .\output_perf\dc1_host3_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc1_host3_2021Apr18_0000.perf
+Replace:  oracleLinux64  with  dc1.host3.g00
+Replace:  pawzESX  with  dc1.host3.g01
+Replace:  pawzV92  with  dc1.host3.g02
+Replace:  testsql2012  with  dc1.host3.g03
+Replace:  testsql2012  with  dc1.host3.g04
+Replace:  ubuntu64  with  dc1.host3.g05
+Replace:  vs01w2k3r2x32us  with  dc1.host3.g06
+Replace:  vs01w2k3x6401  with  dc1.host3.g07
+Replace:  staging1  with  dc1.host3.g09
+Replace:  staging2  with  dc1.host3.g10
+Replace:  staging3  with  dc1.host3.g11
+Replace:  staging  with  dc1.host3.g12
+Replace:  vs01Win7  with  dc1.host3.g13
+Replace:  vs01w2k3x6403_32  with  dc1.host3.g08
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc1_host4
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\esxi01_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is esxi01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\esxi01_2013Jan29_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\esxi01_2020Feb20_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc1_host4
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\esxi01_2013Jan29_0000.perf
+    MERG:          .\input_merg\esxi01_2021Apr16_1424.merg
+    CONFIG:        .\input_config\esxi01_2020Feb20_0546_config.txt
+    MERG_HOST_IN:  esxi01
+   Create .\output_perf\dc1_host4_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc1_host4_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc1_host4_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc1_host4_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc1_host4_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is VMware vCenter Operations,dc1.host4.g00
+arg 6  is -replace
+arg 7  is e01redhat6_x32,dc1.host4.g01
+arg 8  is -replace
+arg 9  is e01redhat6_x64,dc1.host4.g02
+arg 10  is -replace
+arg 11  is e01rhel55,dc1.host4.g03
+arg 12  is -replace
+arg 13  is e01sles11,dc1.host4.g04
+arg 14  is -replace
+arg 15  is e01sun10,dc1.host4.g05
+arg 16  is -replace
+arg 17  is e01suse11,dc1.host4.g06
+arg 18  is -replace
+arg 19  is e01sys01,dc1.host4.g07
+arg 20  is -replace
+arg 21  is e01win2000,dc1.host4.g08
+arg 22  is -replace
+arg 23  is sprsystem,dc1.host4.g09
+arg 24  is -replace
+arg 25  is vCenter Mobile Access,dc1.host4.g10
+arg 26  is -replace
+arg 27  is vkosystem,dc1.host4.g11
+arg 28  is -replace
+arg 29  is C1-TaloranTemplate,dc1.host4.g12
+arg 30  is -replace
+arg 31  is Thales Clone,dc1.host4.g13
+arg 32  is -replace
+arg 33  is VMware Studio,dc1.host4.g14-replace
+arg 34  is e01EVA,dc1.host4.g15
+arg 35  is -replace
+arg 36  is e01fedora16,dc1.host4.g16
+arg 37  is -replace
+arg 38  is e01.vm.eva.x64,dc1.host4.g17
+arg 39  is -replace
+arg 40  is e01.vm.tm.x64,dc1.host4.g18
+arg 41  is -replace
+arg 42  is e01solaris11,dc1.host4.g19
+arg 43  is -replace
+arg 44  is e01ubuntu,dc1.host4.g20
+arg 45  is -replace
+arg 46  is test_install_nojava,dc1.host4.g21
+arg 47  is -replace
+arg 48  is e01ubuntu,dc1.host4.g22
+arg 49  is -replace
+arg 50  is e01w2k8x64,dc1.host4.g23
+arg 51  is -replace
+arg 52  is pawzdemo,dc1.host4.g24-replace
+arg 53  is pawzv10test_esx,dc1.host4.g25
+arg 54  is -replace
+arg 55  is pawzv10test_tm,dc1.host4.g26
+arg 56  is -replace
+arg 57  is vSolaris11,dc1.host4.g27
+arg 58  is -replace
+arg 59  is vTransactionMonitor,dc1.host4.g27
+InFile:  .\output_perf\dc1_host4_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc1_host4_2021Apr18_0000.perf
+Replace:  VMware vCenter Operations  with  dc1.host4.g00
+Replace:  e01redhat6_x32  with  dc1.host4.g01
+Replace:  e01redhat6_x64  with  dc1.host4.g02
+Replace:  e01rhel55  with  dc1.host4.g03
+Replace:  e01sles11  with  dc1.host4.g04
+Replace:  e01sun10  with  dc1.host4.g05
+Replace:  e01suse11  with  dc1.host4.g06
+Replace:  e01sys01  with  dc1.host4.g07
+Replace:  e01win2000  with  dc1.host4.g08
+Replace:  sprsystem  with  dc1.host4.g09
+Replace:  vCenter Mobile Access  with  dc1.host4.g10
+Replace:  vkosystem  with  dc1.host4.g11
+Replace:  C1-TaloranTemplate  with  dc1.host4.g12
+Replace:  Thales Clone  with  dc1.host4.g13
+Replace:  VMware Studio  with  dc1.host4.g14-replace
+Replace:  e01EVA  with  dc1.host4.g15
+Replace:  e01fedora16  with  dc1.host4.g16
+Replace:  e01.vm.eva.x64  with  dc1.host4.g17
+Replace:  e01.vm.tm.x64  with  dc1.host4.g18
+Replace:  e01solaris11  with  dc1.host4.g19
+Replace:  e01ubuntu  with  dc1.host4.g20
+Replace:  test_install_nojava  with  dc1.host4.g21
+Replace:  e01ubuntu  with  dc1.host4.g22
+Replace:  e01w2k8x64  with  dc1.host4.g23
+Replace:  pawzdemo  with  dc1.host4.g24-replace
+Replace:  pawzv10test_esx  with  dc1.host4.g25
+Replace:  pawzv10test_tm  with  dc1.host4.g26
+Replace:  vSolaris11  with  dc1.host4.g27
+Replace:  vTransactionMonitor  with  dc1.host4.g27
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc1_host5
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc1_host5
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc1_host5_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc1_host5_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc1_host5_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc1_host5_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc1_host5_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc1.host5.g00
+arg 6  is -replace
+arg 7  is vAgua,dc1.host5.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc1.host5.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc1.host5.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc1.host5.g04
+arg 14  is -replace
+arg 15  is vMoto,dc1.host5.g05
+arg 16  is -replace
+arg 17  is vNoir,dc1.host5.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc1.host5.g07
+arg 20  is -replace
+arg 21  is vThales,dc1.host5.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc1.host5.g09
+InFile:  .\output_perf\dc1_host5_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc1_host5_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc1.host5.g00
+Replace:  vAgua  with  dc1.host5.g01
+Replace:  vCoreAP1  with  dc1.host5.g02
+Replace:  vCoreDB1  with  dc1.host5.g03
+Replace:  vEuclid  with  dc1.host5.g04
+Replace:  vMoto  with  dc1.host5.g05
+Replace:  vNoir  with  dc1.host5.g06
+Replace:  vSolaris10  with  dc1.host5.g07
+Replace:  vThales  with  dc1.host5.g08
+Replace:  vTmMonitor  with  dc1.host5.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc2_host1
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc2_host1
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc2_host1_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc2_host1_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc2_host1_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc2_host1_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc2_host1_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc2.host1.g00
+arg 6  is -replace
+arg 7  is vAgua,dc2.host1.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc2.host1.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc2.host1.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc2.host1.g04
+arg 14  is -replace
+arg 15  is vMoto,dc2.host1.g05
+arg 16  is -replace
+arg 17  is vNoir,dc2.host1.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc2.host1.g07
+arg 20  is -replace
+arg 21  is vThales,dc2.host1.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc2.host1.g09
+InFile:  .\output_perf\dc2_host1_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc2_host1_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc2.host1.g00
+Replace:  vAgua  with  dc2.host1.g01
+Replace:  vCoreAP1  with  dc2.host1.g02
+Replace:  vCoreDB1  with  dc2.host1.g03
+Replace:  vEuclid  with  dc2.host1.g04
+Replace:  vMoto  with  dc2.host1.g05
+Replace:  vNoir  with  dc2.host1.g06
+Replace:  vSolaris10  with  dc2.host1.g07
+Replace:  vThales  with  dc2.host1.g08
+Replace:  vTmMonitor  with  dc2.host1.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc2_host2
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc2_host2
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc2_host2_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc2_host2_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc2_host2_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc2_host2_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc2_host2_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc2.host2.g00
+arg 6  is -replace
+arg 7  is vAgua,dc2.host2.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc2.host2.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc2.host2.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc2.host2.g04
+arg 14  is -replace
+arg 15  is vMoto,dc2.host2.g05
+arg 16  is -replace
+arg 17  is vNoir,dc2.host2.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc2.host2.g07
+arg 20  is -replace
+arg 21  is vThales,dc2.host2.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc2.host2.g09
+InFile:  .\output_perf\dc2_host2_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc2_host2_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc2.host2.g00
+Replace:  vAgua  with  dc2.host2.g01
+Replace:  vCoreAP1  with  dc2.host2.g02
+Replace:  vCoreDB1  with  dc2.host2.g03
+Replace:  vEuclid  with  dc2.host2.g04
+Replace:  vMoto  with  dc2.host2.g05
+Replace:  vNoir  with  dc2.host2.g06
+Replace:  vSolaris10  with  dc2.host2.g07
+Replace:  vThales  with  dc2.host2.g08
+Replace:  vTmMonitor  with  dc2.host2.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc2_host3
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc2_host3
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc2_host3_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc2_host3_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc2_host3_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc2_host3_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc2_host3_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc2.host3.g00
+arg 6  is -replace
+arg 7  is vAgua,dc2.host3.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc2.host3.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc2.host3.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc2.host3.g04
+arg 14  is -replace
+arg 15  is vMoto,dc2.host3.g05
+arg 16  is -replace
+arg 17  is vNoir,dc2.host3.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc2.host3.g07
+arg 20  is -replace
+arg 21  is vThales,dc2.host3.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc2.host3.g09
+InFile:  .\output_perf\dc2_host3_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc2_host3_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc2.host3.g00
+Replace:  vAgua  with  dc2.host3.g01
+Replace:  vCoreAP1  with  dc2.host3.g02
+Replace:  vCoreDB1  with  dc2.host3.g03
+Replace:  vEuclid  with  dc2.host3.g04
+Replace:  vMoto  with  dc2.host3.g05
+Replace:  vNoir  with  dc2.host3.g06
+Replace:  vSolaris10  with  dc2.host3.g07
+Replace:  vThales  with  dc2.host3.g08
+Replace:  vTmMonitor  with  dc2.host3.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc2_host4
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc2_host4
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc2_host4_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc2_host4_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc2_host4_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc2_host4_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc2_host4_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc2.host4.g00
+arg 6  is -replace
+arg 7  is vAgua,dc2.host4.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc2.host4.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc2.host4.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc2.host4.g04
+arg 14  is -replace
+arg 15  is vMoto,dc2.host4.g05
+arg 16  is -replace
+arg 17  is vNoir,dc2.host4.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc2.host4.g07
+arg 20  is -replace
+arg 21  is vThales,dc2.host4.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc2.host4.g09
+InFile:  .\output_perf\dc2_host4_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc2_host4_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc2.host4.g00
+Replace:  vAgua  with  dc2.host4.g01
+Replace:  vCoreAP1  with  dc2.host4.g02
+Replace:  vCoreDB1  with  dc2.host4.g03
+Replace:  vEuclid  with  dc2.host4.g04
+Replace:  vMoto  with  dc2.host4.g05
+Replace:  vNoir  with  dc2.host4.g06
+Replace:  vSolaris10  with  dc2.host4.g07
+Replace:  vThales  with  dc2.host4.g08
+Replace:  vTmMonitor  with  dc2.host4.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc2_host5
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\vsphere01_2021Apr14_0802.merg
+arg 10  is -mhost
+arg 11  is vsphere01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\vsphere01_2013Jan31_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\vsphere01_2020Feb19_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc2_host5
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\vsphere01_2013Jan31_0000.perf
+    MERG:          .\input_merg\vsphere01_2021Apr14_0802.merg
+    CONFIG:        .\input_config\vsphere01_2020Feb19_0546_config.txt
+    MERG_HOST_IN:  vsphere01
+   Create .\output_perf\dc2_host5_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc2_host5_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc2_host5_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc2_host5_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc2_host5_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is oracleLinux64,dc2.host5.g00
+arg 6  is -replace
+arg 7  is pawzESX,dc2.host5.g01
+arg 8  is -replace
+arg 9  is pawzV92,dc2.host5.g02
+arg 10  is -replace
+arg 11  is testsql2012,dc2.host5.g03
+arg 12  is -replace
+arg 13  is testsql2012,dc2.host5.g04
+arg 14  is -replace
+arg 15  is ubuntu64,dc2.host5.g05
+arg 16  is -replace
+arg 17  is vs01w2k3r2x32us,dc2.host5.g06
+arg 18  is -replace
+arg 19  is vs01w2k3x6401,dc2.host5.g07
+arg 20  is -replace
+arg 21  is staging1,dc2.host5.g09
+arg 22  is -replace
+arg 23  is staging2,dc2.host5.g10
+arg 24  is -replace
+arg 25  is staging3,dc2.host5.g11
+arg 26  is -replace
+arg 27  is staging,dc2.host5.g12
+arg 28  is -replace
+arg 29  is vs01Win7,dc2.host5.g13
+arg 30  is -replace
+arg 31  is vs01w2k3x6403_32,dc2.host5.g08
+InFile:  .\output_perf\dc2_host5_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc2_host5_2021Apr18_0000.perf
+Replace:  oracleLinux64  with  dc2.host5.g00
+Replace:  pawzESX  with  dc2.host5.g01
+Replace:  pawzV92  with  dc2.host5.g02
+Replace:  testsql2012  with  dc2.host5.g03
+Replace:  testsql2012  with  dc2.host5.g04
+Replace:  ubuntu64  with  dc2.host5.g05
+Replace:  vs01w2k3r2x32us  with  dc2.host5.g06
+Replace:  vs01w2k3x6401  with  dc2.host5.g07
+Replace:  staging1  with  dc2.host5.g09
+Replace:  staging2  with  dc2.host5.g10
+Replace:  staging3  with  dc2.host5.g11
+Replace:  staging  with  dc2.host5.g12
+Replace:  vs01Win7  with  dc2.host5.g13
+Replace:  vs01w2k3x6403_32  with  dc2.host5.g08
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host1
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\esxi01_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is esxi01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\esxi01_2013Jan29_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\esxi01_2020Feb20_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host1
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\esxi01_2013Jan29_0000.perf
+    MERG:          .\input_merg\esxi01_2021Apr16_1424.merg
+    CONFIG:        .\input_config\esxi01_2020Feb20_0546_config.txt
+    MERG_HOST_IN:  esxi01
+   Create .\output_perf\dc3_host1_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host1_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host1_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host1_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host1_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is VMware vCenter Operations,dc3.host1.g00
+arg 6  is -replace
+arg 7  is e01redhat6_x32,dc3.host1.g01
+arg 8  is -replace
+arg 9  is e01redhat6_x64,dc3.host1.g02
+arg 10  is -replace
+arg 11  is e01rhel55,dc3.host1.g03
+arg 12  is -replace
+arg 13  is e01sles11,dc3.host1.g04
+arg 14  is -replace
+arg 15  is e01sun10,dc3.host1.g05
+arg 16  is -replace
+arg 17  is e01suse11,dc3.host1.g06
+arg 18  is -replace
+arg 19  is e01sys01,dc3.host1.g07
+arg 20  is -replace
+arg 21  is e01win2000,dc3.host1.g08
+arg 22  is -replace
+arg 23  is sprsystem,dc3.host1.g09
+arg 24  is -replace
+arg 25  is vCenter Mobile Access,dc3.host1.g10
+arg 26  is -replace
+arg 27  is vkosystem,dc3.host1.g11
+arg 28  is -replace
+arg 29  is C1-TaloranTemplate,dc3.host1.g12
+arg 30  is -replace
+arg 31  is Thales Clone,dc3.host1.g13
+arg 32  is -replace
+arg 33  is VMware Studio,dc3.host1.g14-replace
+arg 34  is e01EVA,dc3.host1.g15
+arg 35  is -replace
+arg 36  is e01fedora16,dc3.host1.g16
+arg 37  is -replace
+arg 38  is e01.vm.eva.x64,dc3.host1.g17
+arg 39  is -replace
+arg 40  is e01.vm.tm.x64,dc3.host1.g18
+arg 41  is -replace
+arg 42  is e01solaris11,dc3.host1.g19
+arg 43  is -replace
+arg 44  is e01ubuntu,dc3.host1.g20
+arg 45  is -replace
+arg 46  is test_install_nojava,dc3.host1.g21
+arg 47  is -replace
+arg 48  is e01ubuntu,dc3.host1.g22
+arg 49  is -replace
+arg 50  is e01w2k8x64,dc3.host1.g23
+arg 51  is -replace
+arg 52  is pawzdemo,dc3.host1.g24-replace
+arg 53  is pawzv10test_esx,dc3.host1.g25
+arg 54  is -replace
+arg 55  is pawzv10test_tm,dc3.host1.g26
+arg 56  is -replace
+arg 57  is vSolaris11,dc3.host1.g27
+arg 58  is -replace
+arg 59  is vTransactionMonitor,dc3.host1.g27
+InFile:  .\output_perf\dc3_host1_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host1_2021Apr18_0000.perf
+Replace:  VMware vCenter Operations  with  dc3.host1.g00
+Replace:  e01redhat6_x32  with  dc3.host1.g01
+Replace:  e01redhat6_x64  with  dc3.host1.g02
+Replace:  e01rhel55  with  dc3.host1.g03
+Replace:  e01sles11  with  dc3.host1.g04
+Replace:  e01sun10  with  dc3.host1.g05
+Replace:  e01suse11  with  dc3.host1.g06
+Replace:  e01sys01  with  dc3.host1.g07
+Replace:  e01win2000  with  dc3.host1.g08
+Replace:  sprsystem  with  dc3.host1.g09
+Replace:  vCenter Mobile Access  with  dc3.host1.g10
+Replace:  vkosystem  with  dc3.host1.g11
+Replace:  C1-TaloranTemplate  with  dc3.host1.g12
+Replace:  Thales Clone  with  dc3.host1.g13
+Replace:  VMware Studio  with  dc3.host1.g14-replace
+Replace:  e01EVA  with  dc3.host1.g15
+Replace:  e01fedora16  with  dc3.host1.g16
+Replace:  e01.vm.eva.x64  with  dc3.host1.g17
+Replace:  e01.vm.tm.x64  with  dc3.host1.g18
+Replace:  e01solaris11  with  dc3.host1.g19
+Replace:  e01ubuntu  with  dc3.host1.g20
+Replace:  test_install_nojava  with  dc3.host1.g21
+Replace:  e01ubuntu  with  dc3.host1.g22
+Replace:  e01w2k8x64  with  dc3.host1.g23
+Replace:  pawzdemo  with  dc3.host1.g24-replace
+Replace:  pawzv10test_esx  with  dc3.host1.g25
+Replace:  pawzv10test_tm  with  dc3.host1.g26
+Replace:  vSolaris11  with  dc3.host1.g27
+Replace:  vTransactionMonitor  with  dc3.host1.g27
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host2
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host2
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc3_host2_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host2_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host2_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host2_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host2_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc3.host2.g00
+arg 6  is -replace
+arg 7  is vAgua,dc3.host2.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc3.host2.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc3.host2.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc3.host2.g04
+arg 14  is -replace
+arg 15  is vMoto,dc3.host2.g05
+arg 16  is -replace
+arg 17  is vNoir,dc3.host2.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc3.host2.g07
+arg 20  is -replace
+arg 21  is vThales,dc3.host2.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc3.host2.g09
+InFile:  .\output_perf\dc3_host2_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host2_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc3.host2.g00
+Replace:  vAgua  with  dc3.host2.g01
+Replace:  vCoreAP1  with  dc3.host2.g02
+Replace:  vCoreDB1  with  dc3.host2.g03
+Replace:  vEuclid  with  dc3.host2.g04
+Replace:  vMoto  with  dc3.host2.g05
+Replace:  vNoir  with  dc3.host2.g06
+Replace:  vSolaris10  with  dc3.host2.g07
+Replace:  vThales  with  dc3.host2.g08
+Replace:  vTmMonitor  with  dc3.host2.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host3
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\vsphere01_2021Apr14_0802.merg
+arg 10  is -mhost
+arg 11  is vsphere01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\vsphere01_2013Jan31_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\vsphere01_2020Feb19_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host3
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\vsphere01_2013Jan31_0000.perf
+    MERG:          .\input_merg\vsphere01_2021Apr14_0802.merg
+    CONFIG:        .\input_config\vsphere01_2020Feb19_0546_config.txt
+    MERG_HOST_IN:  vsphere01
+   Create .\output_perf\dc3_host3_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host3_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host3_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+main
+esx demo, create perf files... 18-Apr-2021
+dc1_host1 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc1_host1
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:51 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc1_host1_2021Apr18_0000.perf
+input perf: .\output_perf\dc1_host1_2021Apr18_0000.perf
+dc1_host2 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc1_host2
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:52 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc1_host2_2021Apr18_0000.perf
+input perf: .\output_perf\dc1_host2_2021Apr18_0000.perf
+dc1_host3 : vsphere01_2013Jan31_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc1_host3
+ -config  .\input_config\vsphere01_2020Feb19_0546_config.txt
+ -merg  .\input_merg\vsphere01_2021Apr14_0802.merg
+ -perf  .\input_perf\vsphere01_2013Jan31_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:52 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc1_host3_2021Apr18_0000.perf
+input perf: .\output_perf\dc1_host3_2021Apr18_0000.perf
+dc1_host4 : esxi01_2013Jan29_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc1_host4
+ -config  .\input_config\esxi01_2020Feb20_0546_config.txt
+ -merg  .\input_merg\esxi01_2021Apr16_1424.merg
+ -perf  .\input_perf\esxi01_2013Jan29_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:53 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc1_host4_2021Apr18_0000.perf
+input perf: .\output_perf\dc1_host4_2021Apr18_0000.perf
+dc1_host5 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc1_host5
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:54 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc1_host5_2021Apr18_0000.perf
+input perf: .\output_perf\dc1_host5_2021Apr18_0000.perf
+dc2_host1 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc2_host1
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:54 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc2_host1_2021Apr18_0000.perf
+input perf: .\output_perf\dc2_host1_2021Apr18_0000.perf
+dc2_host2 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc2_host2
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:55 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc2_host2_2021Apr18_0000.perf
+input perf: .\output_perf\dc2_host2_2021Apr18_0000.perf
+dc2_host3 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc2_host3
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:56 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc2_host3_2021Apr18_0000.perf
+input perf: .\output_perf\dc2_host3_2021Apr18_0000.perf
+dc2_host4 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc2_host4
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:56 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc2_host4_2021Apr18_0000.perf
+input perf: .\output_perf\dc2_host4_2021Apr18_0000.perf
+dc2_host5 : vsphere01_2013Jan31_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc2_host5
+ -config  .\input_config\vsphere01_2020Feb19_0546_config.txt
+ -merg  .\input_merg\vsphere01_2021Apr14_0802.merg
+ -perf  .\input_perf\vsphere01_2013Jan31_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:57 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc2_host5_2021Apr18_0000.perf
+input perf: .\output_perf\dc2_host5_2021Apr18_0000.perf
+dc3_host1 : esxi01_2013Jan29_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host1
+ -config  .\input_config\esxi01_2020Feb20_0546_config.txt
+ -merg  .\input_merg\esxi01_2021Apr16_1424.merg
+ -perf  .\input_perf\esxi01_2013Jan29_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:57 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host1_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host1_2021Apr18_0000.perf
+dc3_host2 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host2
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:58 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host2_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host2_2021Apr18_0000.perf
+dc3_host3 : vsphere01_2013Jan31_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host3
+ -config  .\input_config\vsphere01_2020Feb19_0546_config.txt
+ -merg  .\input_merg\vsphere01_2021Apr14_0802.merg
+ -perf  .\input_perf\vsphere01_2013Jan31_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************arg 0  is -infile
+arg 1  is .\output_perf\dc3_host3_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host3_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is oracleLinux64,dc3.host3.g00
+arg 6  is -replace
+arg 7  is pawzESX,dc3.host3.g01
+arg 8  is -replace
+arg 9  is pawzV92,dc3.host3.g02
+arg 10  is -replace
+arg 11  is testsql2012,dc3.host3.g03
+arg 12  is -replace
+arg 13  is testsql2012,dc3.host3.g04
+arg 14  is -replace
+arg 15  is ubuntu64,dc3.host3.g05
+arg 16  is -replace
+arg 17  is vs01w2k3r2x32us,dc3.host3.g06
+arg 18  is -replace
+arg 19  is vs01w2k3x6401,dc3.host3.g07
+arg 20  is -replace
+arg 21  is staging1,dc3.host3.g09
+arg 22  is -replace
+arg 23  is staging2,dc3.host3.g10
+arg 24  is -replace
+arg 25  is staging3,dc3.host3.g11
+arg 26  is -replace
+arg 27  is staging,dc3.host3.g12
+arg 28  is -replace
+arg 29  is vs01Win7,dc3.host3.g13
+arg 30  is -replace
+arg 31  is vs01w2k3x6403_32,dc3.host3.g08
+InFile:  .\output_perf\dc3_host3_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host3_2021Apr18_0000.perf
+Replace:  oracleLinux64  with  dc3.host3.g00
+Replace:  pawzESX  with  dc3.host3.g01
+Replace:  pawzV92  with  dc3.host3.g02
+Replace:  testsql2012  with  dc3.host3.g03
+Replace:  testsql2012  with  dc3.host3.g04
+Replace:  ubuntu64  with  dc3.host3.g05
+Replace:  vs01w2k3r2x32us  with  dc3.host3.g06
+Replace:  vs01w2k3x6401  with  dc3.host3.g07
+Replace:  staging1  with  dc3.host3.g09
+Replace:  staging2  with  dc3.host3.g10
+Replace:  staging3  with  dc3.host3.g11
+Replace:  staging  with  dc3.host3.g12
+Replace:  vs01Win7  with  dc3.host3.g13
+Replace:  vs01w2k3x6403_32  with  dc3.host3.g08
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host4
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\vsphere01_2021Apr14_0802.merg
+arg 10  is -mhost
+arg 11  is vsphere01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\vsphere01_2013Jan31_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\vsphere01_2020Feb19_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host4
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\vsphere01_2013Jan31_0000.perf
+    MERG:          .\input_merg\vsphere01_2021Apr14_0802.merg
+    CONFIG:        .\input_config\vsphere01_2020Feb19_0546_config.txt
+    MERG_HOST_IN:  vsphere01
+   Create .\output_perf\dc3_host4_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host4_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host4_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host4_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host4_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is oracleLinux64,dc3.host4.g00
+arg 6  is -replace
+arg 7  is pawzESX,dc3.host4.g01
+arg 8  is -replace
+arg 9  is pawzV92,dc3.host4.g02
+arg 10  is -replace
+arg 11  is testsql2012,dc3.host4.g03
+arg 12  is -replace
+arg 13  is testsql2012,dc3.host4.g04
+arg 14  is -replace
+arg 15  is ubuntu64,dc3.host4.g05
+arg 16  is -replace
+arg 17  is vs01w2k3r2x32us,dc3.host4.g06
+arg 18  is -replace
+arg 19  is vs01w2k3x6401,dc3.host4.g07
+arg 20  is -replace
+arg 21  is staging1,dc3.host4.g09
+arg 22  is -replace
+arg 23  is staging2,dc3.host4.g10
+arg 24  is -replace
+arg 25  is staging3,dc3.host4.g11
+arg 26  is -replace
+arg 27  is staging,dc3.host4.g12
+arg 28  is -replace
+arg 29  is vs01Win7,dc3.host4.g13
+arg 30  is -replace
+arg 31  is vs01w2k3x6403_32,dc3.host4.g08
+InFile:  .\output_perf\dc3_host4_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host4_2021Apr18_0000.perf
+Replace:  oracleLinux64  with  dc3.host4.g00
+Replace:  pawzESX  with  dc3.host4.g01
+Replace:  pawzV92  with  dc3.host4.g02
+Replace:  testsql2012  with  dc3.host4.g03
+Replace:  testsql2012  with  dc3.host4.g04
+Replace:  ubuntu64  with  dc3.host4.g05
+Replace:  vs01w2k3r2x32us  with  dc3.host4.g06
+Replace:  vs01w2k3x6401  with  dc3.host4.g07
+Replace:  staging1  with  dc3.host4.g09
+Replace:  staging2  with  dc3.host4.g10
+Replace:  staging3  with  dc3.host4.g11
+Replace:  staging  with  dc3.host4.g12
+Replace:  vs01Win7  with  dc3.host4.g13
+Replace:  vs01w2k3x6403_32  with  dc3.host4.g08
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host5
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host5
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc3_host5_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host5_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host5_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host5_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host5_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc3.host5.g00
+arg 6  is -replace
+arg 7  is vAgua,dc3.host5.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc3.host5.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc3.host5.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc3.host5.g04
+arg 14  is -replace
+arg 15  is vMoto,dc3.host5.g05
+arg 16  is -replace
+arg 17  is vNoir,dc3.host5.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc3.host5.g07
+arg 20  is -replace
+arg 21  is vThales,dc3.host5.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc3.host5.g09
+InFile:  .\output_perf\dc3_host5_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host5_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc3.host5.g00
+Replace:  vAgua  with  dc3.host5.g01
+Replace:  vCoreAP1  with  dc3.host5.g02
+Replace:  vCoreDB1  with  dc3.host5.g03
+Replace:  vEuclid  with  dc3.host5.g04
+Replace:  vMoto  with  dc3.host5.g05
+Replace:  vNoir  with  dc3.host5.g06
+Replace:  vSolaris10  with  dc3.host5.g07
+Replace:  vThales  with  dc3.host5.g08
+Replace:  vTmMonitor  with  dc3.host5.g09
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host6
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\vsphere01_2021Apr14_0802.merg
+arg 10  is -mhost
+arg 11  is vsphere01
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\vsphere01_2013Jan31_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\vsphere01_2020Feb19_0546_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host6
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\vsphere01_2013Jan31_0000.perf
+    MERG:          .\input_merg\vsphere01_2021Apr14_0802.merg
+    CONFIG:        .\input_config\vsphere01_2020Feb19_0546_config.txt
+    MERG_HOST_IN:  vsphere01
+   Create .\output_perf\dc3_host6_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host6_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host6_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host6_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host6_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is oracleLinux64,dc3.host6.g00
+arg 6  is -replace
+arg 7  is pawzESX,dc3.host6.g01
+arg 8  is -replace
+arg 9  is pawzV92,dc3.host6.g02
+arg 10  is -replace
+arg 11  is testsql2012,dc3.host6.g03
+arg 12  is -replace
+arg 13  is testsql2012,dc3.host6.g04
+arg 14  is -replace
+arg 15  is ubuntu64,dc3.host6.g05
+arg 16  is -replace
+arg 17  is vs01w2k3r2x32us,dc3.host6.g06
+arg 18  is -replace
+arg 19  is vs01w2k3x6401,dc3.host6.g07
+arg 20  is -replace
+arg 21  is staging1,dc3.host6.g09
+arg 22  is -replace
+arg 23  is staging2,dc3.host6.g10
+arg 24  is -replace
+arg 25  is staging3,dc3.host6.g11
+arg 26  is -replace
+arg 27  is staging,dc3.host6.g12
+arg 28  is -replace
+arg 29  is vs01Win7,dc3.host6.g13
+arg 30  is -replace
+arg 31  is vs01w2k3x6403_32,dc3.host6.g08
+InFile:  .\output_perf\dc3_host6_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host6_2021Apr18_0000.perf
+Replace:  oracleLinux64  with  dc3.host6.g00
+Replace:  pawzESX  with  dc3.host6.g01
+Replace:  pawzV92  with  dc3.host6.g02
+Replace:  testsql2012  with  dc3.host6.g03
+Replace:  testsql2012  with  dc3.host6.g04
+Replace:  ubuntu64  with  dc3.host6.g05
+Replace:  vs01w2k3r2x32us  with  dc3.host6.g06
+Replace:  vs01w2k3x6401  with  dc3.host6.g07
+Replace:  staging1  with  dc3.host6.g09
+Replace:  staging2  with  dc3.host6.g10
+Replace:  staging3  with  dc3.host6.g11
+Replace:  staging  with  dc3.host6.g12
+Replace:  vs01Win7  with  dc3.host6.g13
+Replace:  vs01w2k3x6403_32  with  dc3.host6.g08
+done
+Done
+arg 0  is -start
+arg 1  is 18-Apr-2021
+arg 2  is -end
+arg 3  is 18-Apr-2021
+arg 4  is -host
+arg 5  is dc3_host7
+arg 6  is -outdir_perf
+arg 7  is .\output_perf
+arg 8  is -merg
+arg 9  is .\input_merg\rgesxi_2021Apr16_1424.merg
+arg 10  is -mhost
+arg 11  is rgesxi
+arg 12  is -outdir_merg
+arg 13  is C:\tmp\merg
+arg 14  is -perf
+arg 15  is .\input_perf\rgesxi_2013Feb04_0000.perf
+arg 16  is -config
+arg 17  is .\input_config\rgESXi_2020Mar27_1416_config.txt
+arg 18  is -outdir_config
+arg 19  is C:\TMP\PERF
+duplicatePerfAndMerg t1.2.0 ...
+
+    Outputdir_PERF:.\output_perf
+    Outputdir_MERG:C:\tmp\merg
+    Hostname:      dc3_host7
+    StartTime:     18-Apr-2021
+    EndTime:       18-Apr-2021
+    PERF:          .\input_perf\rgesxi_2013Feb04_0000.perf
+    MERG:          .\input_merg\rgesxi_2021Apr16_1424.merg
+    CONFIG:        .\input_config\rgESXi_2020Mar27_1416_config.txt
+    MERG_HOST_IN:  rgesxi
+   Create .\output_perf\dc3_host7_2021Apr18_0000.perf
+   Create C:\tmp\merg\dc3_host7_2021Apr18.merg
+duplicateConfig  4/19/2021 12:00:00 AM
+   Create C:\TMP\PERF\dc3_host7_2021Apr19_0131_config.txt
+duplicatePerfAndMerg t1.1.0 ...DONE
+arg 0  is -infile
+arg 1  is .\output_perf\dc3_host7_2021Apr18_0000.perf
+arg 2  is -outfile
+arg 3  is C:\TMP\PERF\dc3_host7_2021Apr18_0000.perf
+arg 4  is -replace
+arg 5  is rgPAWZ,dc3.host7.g00
+arg 6  is -replace
+arg 7  is vAgua,dc3.host7.g01
+arg 8  is -replace
+arg 9  is vCoreAP1,dc3.host7.g02
+arg 10  is -replace
+arg 11  is vCoreDB1,dc3.host7.g03
+arg 12  is -replace
+arg 13  is vEuclid,dc3.host7.g04
+arg 14  is -replace
+arg 15  is vMoto,dc3.host7.g05
+arg 16  is -replace
+arg 17  is vNoir,dc3.host7.g06
+arg 18  is -replace
+arg 19  is vSolaris10,dc3.host7.g07
+arg 20  is -replace
+arg 21  is vThales,dc3.host7.g08
+arg 22  is -replace
+arg 23  is vTmMonitor,dc3.host7.g09
+InFile:  .\output_perf\dc3_host7_2021Apr18_0000.perf
+OutFile:  C:\TMP\PERF\dc3_host7_2021Apr18_0000.perf
+Replace:  rgPAWZ  with  dc3.host7.g00
+Replace:  vAgua  with  dc3.host7.g01
+Replace:  vCoreAP1  with  dc3.host7.g02
+Replace:  vCoreDB1  with  dc3.host7.g03
+Replace:  vEuclid  with  dc3.host7.g04
+Replace:  vMoto  with  dc3.host7.g05
+Replace:  vNoir  with  dc3.host7.g06
+Replace:  vSolaris10  with  dc3.host7.g07
+Replace:  vThales  with  dc3.host7.g08
+Replace:  vTmMonitor  with  dc3.host7.g09
+done
+Done
+
+     duplicateperf 10:09:58 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host3_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host3_2021Apr18_0000.perf
+dc3_host4 : vsphere01_2013Jan31_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host4
+ -config  .\input_config\vsphere01_2020Feb19_0546_config.txt
+ -merg  .\input_merg\vsphere01_2021Apr14_0802.merg
+ -perf  .\input_perf\vsphere01_2013Jan31_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:09:59 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host4_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host4_2021Apr18_0000.perf
+dc3_host5 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host5
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:10:00 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host5_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host5_2021Apr18_0000.perf
+dc3_host6 : vsphere01_2013Jan31_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host6
+ -config  .\input_config\vsphere01_2020Feb19_0546_config.txt
+ -merg  .\input_merg\vsphere01_2021Apr14_0802.merg
+ -perf  .\input_perf\vsphere01_2013Jan31_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:10:00 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host6_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host6_2021Apr18_0000.perf
+dc3_host7 : rgesxi_2013Feb04_0000.perf
+Run  .\bin\DuplicatePerfAndMerg.exe
+ -host  dc3_host7
+ -config  .\input_config\rgESXi_2020Mar27_1416_config.txt
+ -merg  .\input_merg\rgesxi_2021Apr16_1424.merg
+ -perf  .\input_perf\rgesxi_2013Feb04_0000.perf
+RunScript call...  .\bin\DuplicatePerfAndMerg.exe
+***********************************************
+***********************************************
+     duplicateperf 10:10:01 PM
+***********************************************
+***********************************************
+final perf: C:\TMP\PERF\dc3_host7_2021Apr18_0000.perf
+input perf: .\output_perf\dc3_host7_2021Apr18_0000.perf
+done

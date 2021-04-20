@@ -1,0 +1,16 @@
+TEST|Filesystem Throughput 1024 bufsize 2000 maxblocks
+FLAVOR|Linux
+30 second sample
+940333 Kbytes/sec write 1024 bufsize 2000 max blocks
+30 second sample
+2872694 Kbytes/sec read 1024 bufsize 2000 max blocks 
+30 second sample
+687614 Kbytes/sec copy 1024 bufsize 2000 max blocks 
+        123.04 real        4.37 user        85.59 sys
+30 second sample
+986466 Kbytes/sec write 1024 bufsize 2000 max blocks
+30 second sample
+2846584 Kbytes/sec read 1024 bufsize 2000 max blocks 
+30 second sample
+671931 Kbytes/sec copy 1024 bufsize 2000 max blocks 
+        123.04 real        4.47 user        85.50 sys

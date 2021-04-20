@@ -1,0 +1,19 @@
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux vgold.perfcap.com 4.1.12-61.1.18.el7uek.x86_64 #2 SMP Fri Nov 4 15:48:30 PDT 2016 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Tue Dec 29 10:11:08 EST 2020
+|   7 interactive users.
+|   10:11:08 up 1 day, 13:02,  7 users,  load average: 1.82, 1.70, 1.77
+|  lrwxrwxrwx. 1 root root 4 Mar 28  2017 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/mapper/ol-home  89208260 62404  89145856   1% /home
+
+Terminated during iteration 1
+Dhrystone 2 using register variables|  no measured results|
+
+**************************
+* Benchmark Aborted .... *
+**************************
+
+  7 interactive users.
+
+End Benchmark Run (Tue Dec 29 10:11:12 EST 2020) ....
