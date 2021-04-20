@@ -1,0 +1,36 @@
+<CONFIG>
+ConfigVersion:1
+<PERFCAP>
+SoftwareBundle:Hosted
+SoftwareBundleArchitecture:64
+SoftwareProtocol:1110
+CollectorName:eCAP Monitor
+CollectorVersion:V14.3-001:Aug 15 2019
+CollectorVerbose:0
+CollectorScan:2000
+CollectorPeak:0
+CollectorWrite:120
+CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
+CollectorLicenseStatus:Valid
+CollectorLicenseExpire:29-Dec-2020
+CollectorLicenseIssueTo:PERFCAP
+AgentVersion:T14.3-046:Jan 17 2020
+AgentVerbose:1
+AgentPort:1661
+AgentPawzServer:0.0.0.0
+RealtimeInstalled:1
+<ENDPERFCAP>
+<SYSTEM>
+SystemName:vsphere01
+SystemSerialNumber:
+SystemModel:
+SystemVendor:
+SystemTimeZone:
+SystemMemoryTotalCapacity::MB
+SystemOS:
+SystemOSversion:
+<ENDSYSTEM>
+<PROCESSOR>
+ProcessorName:
+<ENDPROCESSOR>
+<ENDCONFIG>

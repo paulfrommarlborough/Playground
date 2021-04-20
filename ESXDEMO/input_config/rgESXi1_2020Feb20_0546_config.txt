@@ -1,0 +1,47 @@
+<CONFIG>
+ConfigVersion:1
+<PERFCAP>
+SoftwareBundle:Hosted
+SoftwareBundleArchitecture:64
+SoftwareProtocol:1110
+CollectorName:eCAP Monitor
+CollectorVersion:V14.3-004:Jan 29 2020
+CollectorVerbose:0
+CollectorScan:2000
+CollectorPeak:0
+CollectorWrite:60
+CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
+CollectorLicenseStatus:Valid
+CollectorLicenseExpire:29-Dec-2020
+CollectorLicenseIssueTo:PERFCAP
+AgentVersion:T14.3-046:Jan 17 2020
+AgentVerbose:1
+AgentPort:1661
+AgentPawzServer:0.0.0.0
+RealtimeInstalled:1
+<ENDPERFCAP>
+<SYSTEM>
+SystemName:192.168.0.79
+SystemSerialNumber:USE2161Y11
+SystemModel:ProLiant DL360 G7
+SystemVendor:HP
+SystemTimeZone:UTC
+SystemTotalGHZ:32.001131412
+SystemProcessorCount:12
+SystemCPUsockets:2
+SystemCPUcoresPerSocket:6
+SystemCPUthreads:24
+SystemNicCount:4
+SystemHbaCount:7
+SystemMemoryTotalCapacity:98293:MB
+SystemOS:VMware ESXi
+SystemOSversion:VMware ESXi 6.0.0 build-3620759
+<ENDSYSTEM>
+<PROCESSOR>
+ProcessorName:Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
+ProcessorMaxClock:2666
+<ENDPROCESSOR>
+<SETTINGS_ECAP>
+Log Details~0
+<ENDSETTINGS_ECAP>
+<ENDCONFIG>

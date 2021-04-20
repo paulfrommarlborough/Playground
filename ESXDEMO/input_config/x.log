@@ -1,0 +1,16 @@
+ Volume in drive D is Data
+ Volume Serial Number is A661-1C65
+
+ Directory of D:\develop\python\mypython\mypython\ESXDEMO\input_config
+
+04/17/2021  07:21 AM    <DIR>          .
+04/17/2021  07:21 AM    <DIR>          ..
+02/20/2020  07:46 AM             1,152 esxi01_2020Feb20_0546_config.txt
+02/20/2020  07:46 AM             1,151 esxi02_2020Feb20_0546_config.txt
+02/20/2020  07:46 AM             1,148 rgESXi1_2020Feb20_0546_config.txt
+02/20/2020  07:46 AM             1,148 rgESXi_2020Feb20_0546_config.txt
+03/27/2020  02:16 PM             1,152 rgESXi_2020Mar27_1416_config.txt
+02/19/2020  07:46 AM               786 vsphere01_2020Feb19_0546_config.txt
+04/17/2021  07:21 AM                 0 x.log
+               7 File(s)          6,537 bytes
+               2 Dir(s)  588,647,563,264 bytes free

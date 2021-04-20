@@ -1,0 +1,47 @@
+<CONFIG>
+ConfigVersion:1
+<PERFCAP>
+SoftwareBundle:Hosted
+SoftwareBundleArchitecture:64
+SoftwareProtocol:1110
+CollectorName:eCAP Monitor
+CollectorVersion:V14.3-004:Jan 29 2020
+CollectorVerbose:0
+CollectorScan:2000
+CollectorPeak:0
+CollectorWrite:120
+CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
+CollectorLicenseStatus:Valid
+CollectorLicenseExpire:29-Dec-2020
+CollectorLicenseIssueTo:PERFCAP
+AgentVersion:T14.3-046:Jan 17 2020
+AgentVerbose:1
+AgentPort:1661
+AgentPawzServer:0.0.0.0
+RealtimeInstalled:1
+<ENDPERFCAP>
+<SYSTEM>
+SystemName:esxi02.perfcap.com
+SystemSerialNumber:CPNN9Z1
+SystemModel:PowerEdge T110 II
+SystemVendor:Dell Inc.
+SystemTimeZone:UTC
+SystemTotalGHZ:12.371895772
+SystemProcessorCount:4
+SystemCPUsockets:1
+SystemCPUcoresPerSocket:4
+SystemCPUthreads:4
+SystemNicCount:1
+SystemHbaCount:5
+SystemMemoryTotalCapacity:32757:MB
+SystemOS:VMware ESXi
+SystemOSversion:VMware ESXi 6.0.0 build-3620759
+<ENDSYSTEM>
+<PROCESSOR>
+ProcessorName:Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+ProcessorMaxClock:3092
+<ENDPROCESSOR>
+<SETTINGS_ECAP>
+Log Details~0
+<ENDSETTINGS_ECAP>
+<ENDCONFIG>
