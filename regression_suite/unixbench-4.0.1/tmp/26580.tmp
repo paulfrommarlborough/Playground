@@ -1,4 +1,0 @@
-TEST|Dhrystone 2 using register variables
-FLAVOR|Linux
-163707108 loops
-        10.08 real        9.81 user        0.00 sys

@@ -1,5 +1,0 @@
-TEST|Arithmetic Test (type = short)
-FLAVOR|Linux
-13615399 loops
-        10.43 real        9.05 user        0.05 sys
-        5.62 real        5.18 user        0.01 sys
