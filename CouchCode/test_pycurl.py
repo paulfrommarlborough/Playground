@@ -14,7 +14,7 @@ c = pycurl.Curl()
 c.setopt(c.USERPWD, 'admin:pawz1')
 c.setopt(c.PORT, 5984)
 c.setopt(c.HTTPGET, 1)
-c.setopt(c.URL, 'http://192.168.5.158//pawzfiles/Palladium_2021Mar15/ecp_Palladium_2021Mar15.zip')
+c.setopt(c.URL, 'http://192.168.5.158//pawzfiles/Palladium_2021Apr19/ecp_Palladium_2021Apr19.zip')
 c.setopt(c.CUSTOMREQUEST, 'GET')
 
 c.perform()
