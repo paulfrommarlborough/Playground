@@ -85,9 +85,11 @@ class couchCurl:
 
     def attachZipCurl(self):
         zip_with_path = f'@{self.zip}'
-        urlx = f'http://admin:pawz1@127.0.0.1:5984/ecapfiles/{self.filename}/ecp_PALLADIUM_2021Aug13_1.zip?rev={self.rev}'
-        subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', zip_with_path, '-H', 'Content-Type: application/zip' ] )
+        zip_no_path= f'{self.filename}.zip'
 
+        urlx = f'http://admin:pawz1@127.0.0.1:5984/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
+        subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', zip_with_path, '-H', 'Content-Type: application/zip' ] )
+        return
 
     #--------------------------------------------------------------------------
     # attachZip:   requests.post
