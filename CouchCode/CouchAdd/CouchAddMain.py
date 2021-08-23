@@ -1,35 +1,114 @@
 import sys
-import argparse
+import os
+
+from os import path
 
 from CouchAddInput import couchinputs
 from CouchAddCurl import couchCurl
+from GetDataFile import GetDataFile
 
-#------------------------------------------------------------
-# Main routine to handle Couch load of   ecapfiles database
-#   save zip of cpc files for systems.  adding extra identifying 
-#   columns in the database.  host, os, ip, date + attached zip
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------
+#  couchAddMain:
+#
+#   Main routine to handle load of  datafile (Zip) to  CouchDB->ecapfiles database
+#     save zip of cpc files for systems.  adding extra identifying 
+#     columns in the database.  host, os, ip, date, dateadded + attached zip
+#  author paul douglas                          23-aug-2021
+#
+# dependencies  : couchdb, requests,
+#  need command line for user/password. - 
+#--------------------------------------------------------------------------------
 
 def main():
+    zip = None
+
+    # parse inputs and get operations list
+
     ci = couchinputs()
     ci.parse()
-    print(f'Couch Add Record for {ci.host}, {ci.os}, {ci.ip}, {ci.date} ')
-    cc = couchCurl(ci.host, ci.os, ci.ip, ci.date, ci.date_added, ci.zip)
-    cc.addEntry()
+    
+    for jdata in  ci.operations_list:           
+#       print(jdata)    
+        print(f'\nCouch Record ADD: Add Entry, {jdata["name"]}, {jdata["os"]}, {jdata["ip"]}, {jdata["date"]} ')
 
-    if cc.entry_added == False:
-        print('----------------------------------------')
-        print(f'FAILED to add entry {ci.host}, {ci.zip}')
-        print('----------------------------------------')
-        return
+        cc = couchCurl(jdata["name"], jdata["os"], jdata["ip"], jdata["date"], jdata["dateadded"], None)
+        
+        # see if we already have it.
 
-    #----------------------------------------------------------------------------------
-    # Since i Cant really get the  requests.post to work,  just bypass it and call curl..
-    #  maybe thats how its all ment to be done.
-    #----------------------------------------------------------------------------------
-    cc.attachZipCurl()
-    print(f'Couch Attach Zip for {ci.host}, {ci.zip}  To : {cc.rev}')
-    print('done.')
+        cc.checkEntry()
+        if cc.already_exists == True:
+            print(f'Couch Record EXISTS: ... ID: {cc.filename} ')
+            continue
+
+        # no zip on command line. - get cpcfiles and create a zip
+        if jdata["zip"] is None:
+            print(f"Couch Record ADD: Create ZIP")
+ 
+            gdf  = GetDataFile(jdata["name"], jdata["os"], jdata["date"], ci.work_dir)
+            status = gdf.GetDataDir()        # get zip
+            if status == 1:
+                status = gdf.GetCPCData()   
+                if status == 1:
+                    gdf.zip_it()
+
+            if gdf.zip is None:
+                print(f'Couch Record ADD:  ZIP file not found....')
+                continue
+            zip = gdf.zip
+        else:
+            zip = jdata['zip']
+
+        # we we have a zip file
+        
+        if path.exists(zip) == False:
+            print(f'Couch Record ADD:  Specified ZIP file not NOT FOUND, {zip}')
+            continue
+
+        # 
+        #  2 step process.   Add Entry   (requests  library)
+        #                    attach zip  (curl)
+    
+        cc.zip = zip
+
+        print(f'Couch Record ADD: Add Entry {jdata["name"]}')
+        cc.addEntry()
+
+        if cc.entry_added == False:
+            print('----------------------------------------')
+            print(f'FAILED to add entry {jdata["name"]}, {zip}')
+            print('----------------------------------------')
+            print(f'DELETE: {zip}')
+
+            try:    
+                os.remove(zip)
+            except OSError as error:
+                print(error)
+
+            continue
+
+        #--------------------------------------------------------------------
+        # attach zip
+        #--------------------------------------------------------------------
+
+        cc.attachZipCurl()
+
+        # need to query couchdb and see if entry has an attachment.
+
+        print(f'Couch Record ADD:  ATTACH ZIP for {jdata["name"]}, {zip}  To : {cc.rev}')
+    
+        # delete local zip file
+        print(f'DELETE: {zip}')
+
+        try:
+            os.remove(zip)
+        except OSError as error:
+            print(error)
+
+        print('CouchAddMain: done.')
+
+#---------------------------------
+# main
+#---------------------------------
 
 if __name__ == "__main__":    
     main()

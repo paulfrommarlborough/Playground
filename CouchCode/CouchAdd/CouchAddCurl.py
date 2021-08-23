@@ -1,5 +1,6 @@
 import requests, io, json
 import subprocess
+from datetime import datetime
 
 #  CouchAddCurl:  
 #     class to handle curl operations.
@@ -7,11 +8,6 @@ import subprocess
 
 from requests.exceptions import ConnectionError
 
-# add with json: need to write json, and then run curl
-#  curl to add entry 
-#     curl -X PUT http://admin:pawz1@127.0.0.1:5984/ecapfiles/palladium_2021apr01 -d @example.json -H "Content-type: application/json"
-#  curl to attach file
-#     curl -vX PUT http://admin:pawz1@127.0.0.1:5984/ecapfiles/palladium_2021apr01/ecp_Palladium_2021Apr01.zip?rev=11-49c188b2f6b009288046e4e80c305b55 --data-binary @ecp_Palladium_2021Apr01.zip -H "Content-Type: application/zip"
 
 class couchCurl:
     def __init__(self, host, os, ip, date, dateadded, zip):
@@ -24,19 +20,22 @@ class couchCurl:
         self.filename = f'{host}_{date}'
         self.entry_added = False
         self.rev = None
+        self.already_exists = False
         return
 
     def buildJson(self):
+        self.date_added = datetime.now().strftime("%d-%b-20%y %H:%M")    # make current.
         data_set = {"name": self.host, "ip": self.ip, "os": self.os, "date": self.date,"dateadded":self.date_added}
         self.json_data = json.dumps(data_set)
         print(f'Input Json: {self.json_data}')
 
 
     # needs the zip file name for data. ?
+
     def buildJson_attach(self):
         data_set = {'rev': self.rev}
         self.json_data_attach = json.dumps(data_set)
-        print(f'Input Json: {self.json_data_attach}')
+        print(f'Attach Input Json: {self.json_data_attach}')
 
 
     #-------------------------------------------------------
@@ -45,6 +44,28 @@ class couchCurl:
     #   saves the rev value , so we can attach the file.
     #------------------------------------------------------------------
     
+    def checkEntry(self):
+        self.already_exists = False
+        urlx = f'http://admin:pawz1@127.0.0.1:5984/ecapfiles/{self.filename}'
+        try:           
+           r = requests.get(urlx)
+        except ConnectionError as e:
+            print(f'--------------------------------------------------------')
+            print(f' EXCEPTION ERROR, GET initial record:  {urlx}')           
+            print(f'--------------------------------------------------------')
+            return False
+
+        if r.status_code == 200:
+            self.already_exists=True
+
+        return self.already_exists
+
+    #-------------------------------------------
+    # addEntry:  add entry into couchdb
+    #
+    #      sets member variable entry_added
+    #-------------------------------------------
+
     def addEntry(self):
 
         self.buildJson()
@@ -60,11 +81,11 @@ class couchCurl:
             print(f' EXCEPTION ERROR, PUT initial record:  {urlx}')           
             print(f'--------------------------------------------------------')
             r = None
-            return
+            return  self.entry_added
 
         if r.ok  == False:
             print(f'Error {r.status_code} :  {r.reason}')
-            return
+            return self.entry_added
 
 
         contentJson= r.json()                                    
@@ -73,14 +94,14 @@ class couchCurl:
         self.entry_added = True
         
         print(f'AddEntry: Status {status},  Rev {self.rev}')
-        return
+        return  self.entry_added
 
 
     #----------------------------------------------------------------------------------
     #  attachZipCurl
     #
     # Since i Cant really get the  requests.post to work,  just bypass it and call curl..
-    # maybe thats how its all ment to be done.
+    # maybe thats how its all ment to be done. (investigate pycurl)
     #----------------------------------------------------------------------------------
 
     def attachZipCurl(self):
@@ -89,7 +110,7 @@ class couchCurl:
 
         urlx = f'http://admin:pawz1@127.0.0.1:5984/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
         subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', zip_with_path, '-H', 'Content-Type: application/zip' ] )
-        return
+        return True
 
     #--------------------------------------------------------------------------
     # attachZip:   requests.post
@@ -99,14 +120,11 @@ class couchCurl:
     def attachZip(self):
         print(f'attach zip')
         self.buildJson_attach()
-        headers = { "content-type":"application/zip" }
-       # files = {'file': (self.zip, open(self.zip, 'rb').read(), 'application/zip', {'Expires': '0'})}
+        headers = { "content-type":"application/zip" }       
         files = {'file': (self.zip, open(self.zip, 'rb').read(), 'application/zip' )}
-        #files={"archive": ("test.zip", fileobj)}
         urlx = f'http://admin:pawz1@127.0.0.1:5984/ecapfiles/{self.filename}'
         try:        
            r = requests.post(urlx, headers=headers,files=files,params=self.json_data_attach)
-
         except ConnectionError as e:
             print(f'--------------------------------------------------------')
             print(f'  *** ATTACH EXCEPTION ERROR. ATTACH {urlx}')           

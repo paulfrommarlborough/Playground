@@ -1,0 +1,1 @@
+python CouchAddMain.py --input C:\tools\couch\nightly\input.json --workdir C:\tools\couch\nightly
