@@ -110,7 +110,7 @@ class GetDataFile:
             strdate = strs[2].split('.')              # split 2nd - if we have a . remove it  strdate will be same as strs[2]
             if strdate not in self.date_list:
                 self.date_list.append(strdate)
-                
+
     #
     # zip_it:  loop through touples list and files to zip (discard path info in zip)
     #
@@ -124,7 +124,7 @@ class GetDataFile:
         
     #    
     # GetAllDates:
-    #  build up date lists for each known OS
+    #  build up date lists for each known OS : skip the current date
     #-----------------------------------------------------------
 
     def  GetAllDates(self):
@@ -132,13 +132,15 @@ class GetDataFile:
                            ['VMWare ESX', [] ],   
                            ['MSSQL', [] ] 
                         ]       
-
+        datetoday = datetime.now().strftime('20%y%b%d').lower()
         for os_data in self.os_date_list:
             self.os = os_data[0]            
             self.GetDataDir()
             self.GetFileDates()
 
             for datep in self.date_list:    # very inefficent
+                if datep[0] in datetoday:      # dont want todays file.
+                    continue
                 os_data[1].append(datep)   
 
             self.date_list = None                
