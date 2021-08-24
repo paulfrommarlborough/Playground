@@ -4,7 +4,7 @@ import os
 from os import path
 
 from CouchAddInput import couchinputs
-from CouchAddCurl import couchCurl
+from CouchCurl import couchCurl
 from GetDataFile import GetDataFile
 
 #--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ def main():
 #       print(jdata)    
         print(f'\nCouch Record ADD: Add Entry, {jdata["name"]}, {jdata["os"]}, {jdata["ip"]}, {jdata["date"]} ')
 
-        cc = couchCurl(jdata["name"], jdata["os"], jdata["ip"], jdata["date"], jdata["dateadded"], None)
+        cc = couchCurl(ci.username, ci.password, jdata["name"], jdata["os"], jdata["ip"], jdata["date"], jdata["dateadded"], None)
         
         # see if we already have it.
 

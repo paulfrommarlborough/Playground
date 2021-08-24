@@ -28,6 +28,7 @@ class GetDataFile:
         self.data_filter=None
         self.data_filer1=None
         self.data_prefix = 'ecp'
+        
     
     # GetDataDir:  get directory and setup filters
     #              so we can wildcard find the data files

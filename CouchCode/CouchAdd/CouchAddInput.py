@@ -45,6 +45,8 @@ class couchinputs:
         self.parser.add_argument('--date', help='data date')
         self.parser.add_argument('--workdir', help='working directory')
         self.parser.add_argument('--all', help='load all files')
+        self.parser.add_argument('--username', help='username')
+        self.parser.add_argument('--password', help='password')        
         self.parser.add_argument('--input-file', type=argparse.FileType('r'),dest='input_file')        
         
 
@@ -77,6 +79,17 @@ class couchinputs:
             self.ip = '127.0.0.1'
         else:
             self.ip = self.args.ip
+
+        if self.args.username is None:            
+            self.username = 'admin'
+        else:
+            self.username = self.args.username
+
+        if self.args.password is None:            
+            self.password = 'pawz1'
+        else:
+            self.password = self.args.password
+
 
         if self.args.zip is None:            
             self.zip = None
