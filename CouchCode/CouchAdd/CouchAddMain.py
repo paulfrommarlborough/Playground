@@ -16,7 +16,6 @@ from GetDataFile import GetDataFile
 #  author paul douglas                          23-aug-2021
 #
 # dependencies  : couchdb, requests,
-#  need command line for user/password. - 
 #--------------------------------------------------------------------------------
 
 def main():
