@@ -30,20 +30,22 @@ class couchinputs:
     def parse(self):  
         print('CouchInputs,  parse...')
         self.args = self.parser.parse_args()        
-        self.validate()
+        status  = self.validate()
+        return status
 
     def validate(self):
         # -does zip exist
         print(f'CouchInputs,  validate..., ')
 
+        # do we default to yesterday - or None
         if self.args.date is None:            
             now = datetime.now() - timedelta(1)
-            self.date = now.strftime("20%y%b%d").lower()     
+            self.date = None #now.strftime("20%y%b%d").lower()     
         else:
             self.date = self.args.date.lower()
 
         if self.args.host is None:            
-            self.host = 'localhost'
+            self.host = None
         else:
             self.host = self.args.host
 
@@ -58,7 +60,7 @@ class couchinputs:
             self.ip = self.args.ip
 
         if self.args.server is None:            
-            self.server = '127.0.0.1'
+            self.server = '127.0.0.1:5984'
         else:
             self.server = self.args.server
 
@@ -77,31 +79,67 @@ class couchinputs:
         else:
             self.work_dir = self.args.workdir
     
-        data = None
+        #----------------------------
+        # get input file
+        #----------------------------
+
+        hostdata = None
         if self.args.input_file is not None:
             str_inputfile = self.args.input_file.name    # has to be a string type.
             print(f'Importing from  {str_inputfile}')
             with open(str_inputfile) as file:            
-                data = json.load(file)           
+                hostdata = json.load(file)           
+
+        #----------------------------
+        # get stub file
+        #----------------------------
 
         if self.work_dir is None:
             str = "stub.json"
         else:
             str = f"{self.work_dir}\\stub.json"
+        
+        try:
+            with open(str) as file:            
+                stubdata = json.load(file)
+                newdata = stubdata.copy()
+        except:
+            print(f'unable top open {self.work_dir}stub.file')
+            return False
+        #----------------------------
+        # figure out what data to get
+        #----------------------------
 
-        with open(str) as file:            
-            stubdata = json.load(file)
-            newdata = stubdata.copy()
-            
-            for j in stubdata['collector_settings']:                            
-                j['date'] = self.date              
-                j['name'] = self.host
-                j['os'] = self.os
-                j['ip'] = self.ip
-                j['zip'] = None
-                newentry = j.copy()
-                print(newentry)
-                self.operations_list.append(newentry)
+        if self.date is not None:
+            if self.host is not None:
+                # have date and host
+                for j in stubdata['collector_settings']:                            
+                    j['date'] = self.date              
+                    j['name'] = self.host
+                    j['os'] = self.os
+                    j['ip'] = self.ip
+                    j['zip'] = None
+                    newentry = j.copy()
+                    print(newentry)
+                    self.operations_list.append(newentry)
+            else:
+                # no host but we have a date.
+                print("have date no host")
+                for i in hostdata['collector_settings']:       
+                    for j in stubdata['collector_settings']:                            
+                        j['date'] = self.date              
+                        j['name'] = i['name']
+                        j['os'] = i['os']
+                        j['ip'] = i['ip']
+                        j['zip'] = None
+                        newentry = j.copy()
+                        print(newentry)
+                        self.operations_list.append(newentry)
 
+
+        else:     # no date   - how do we get all dates or yesterday?
+            if self.host is not None:
+                print("have host, no date")
+                
         print(self.operations_list)
-
+        return True

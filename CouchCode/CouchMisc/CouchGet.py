@@ -1,7 +1,7 @@
 # python to get all databases from couch.
 
 # curl -X GET http://admin:pawz1@192.168.5.158:5984/_all_dbs
-# curl -X GET http://admin:pawz1@192.168.5.158:5984/pawzfiles/_all_docs
+# curl -X GET http://admin:pawz1@192.168.5.158:5984/ecapfiles/_all_docs
 
 import couchdb
 import os

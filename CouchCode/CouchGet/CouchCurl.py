@@ -1,5 +1,6 @@
 import requests, io, json
-import subprocess
+import subprocess, os
+import zipfile
 from datetime import datetime
 
 #  CouchAddCurl:  
@@ -10,12 +11,14 @@ from requests.exceptions import ConnectionError
 
 
 class couchCurl:
-    def __init__(self, server, username, password, host, os, ip, date, dateadded, zip):
+    def __init__(self, server, username, password, host, os, ip, date, dateadded, workdir, zip):
+        self.zip_with_path = None
         self.host = host        
         self.os = os
         self.ip = ip
         self.date = date
         self.server = server
+        self.work_dir = workdir
         self.username = username
         self.password = password
         self.zip = zip
@@ -47,7 +50,7 @@ class couchCurl:
     
     def checkEntry(self):
         self.already_exists = False
-        urlx = f'http://{self.username}:{self.password}@{self.server}:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:           
            r = requests.get(urlx)
         except ConnectionError as e:
@@ -74,7 +77,7 @@ class couchCurl:
         print(f'couchCurl.addEntry {self.host}')
         
         # need more info
-        urlx = f'http://{self.username}:{self.password}@{self.server}:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:           
            r = requests.put(urlx, data =self.json_data)
         except ConnectionError as e:
@@ -106,11 +109,12 @@ class couchCurl:
     #----------------------------------------------------------------------------------
 
     def attachZipCurl(self):
-        zip_with_path = f'@{self.zip}'
+        self.zip_with_path = f'@{self.zip}'
         zip_no_path= f'{self.filename}.zip'
+        os.chdir(self.work_dir)  
 
-        urlx = f'http://{self.username}:{self.password}@{self.server}:5984/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
-        subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', zip_with_path, '-H', 'Content-Type: application/zip' ] )
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
+        subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', self.zip_with_path, '-H', 'Content-Type: application/zip' ] )
         return True
 
     #--------------------------------------------------------------------------
@@ -123,7 +127,7 @@ class couchCurl:
         self.buildJson_attach()
         headers = { "content-type":"application/zip" }       
         files = {'file': (self.zip, open(self.zip, 'rb').read(), 'application/zip' )}
-        urlx = f'http://{self.username}:{self.password}@{self.server}:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:        
            r = requests.post(urlx, headers=headers,files=files,params=self.json_data_attach)
         except ConnectionError as e:
@@ -136,3 +140,83 @@ class couchCurl:
         if r.ok  == False:
             print(f'Error {r.status_code} :  {r.reason}')
             return
+
+#curl -vX GET http://admin:pawz1@192.168.1.167:5984/pawzfiles/ecapdev_2021Mar18/ecp_ecapdev_2021Mar18.zip -O -J
+    def getAttachmentCurl(self):
+        print(f'get attachment...')
+        zip_no_path= f'{self.filename}.zip'
+
+        os.chdir(self.work_dir)
+        # command line order seems to matter
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}/{zip_no_path}'
+        subprocess.run(['curl', '-vX', 'GET', urlx, '-O', '-J' ] )
+
+        return
+
+    def getAttachment(self):
+        zip_no_path= f'{self.filename}.zip'
+        self.zip_with_path = f'{self.work_dir}\\{zip_no_path}'
+        
+        print(f'get attachment...')
+
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}/{zip_no_path}'
+        print(f'{urlx}')
+        try:           
+           r = requests.get(urlx,stream=True)
+        except ConnectionError as e:
+            print(f'--------------------------------------------------------')
+            print(f' EXCEPTION ERROR, PUT initial record:  {urlx}')           
+            print(f'--------------------------------------------------------')
+            return False
+
+        chunk_size = 1024
+
+        with open(self.zip_with_path, 'wb') as fd:
+            for chunk in r.iter_content(chunk_size=chunk_size):
+                fd.write(chunk)
+        
+        
+        if os.path.isfile(self.zip_with_path):
+            self.zip = self.zip_with_path
+            return True
+
+        return False
+
+    def getAllDocuments(self):
+        data_set = {"name": self.host }
+        self.json_data = json.dumps(data_set)
+
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/_all_docs?include_docs=true'
+        print(f'{urlx}')
+        try:           
+           r = requests.get(urlx,data =self.json_data)
+        except ConnectionError as e:
+            print(f'--------------------------------------------------------')
+            print(f' EXCEPTION ERROR, GET initial record:  {urlx}')           
+            print(f'--------------------------------------------------------')
+            return False
+
+        data = r.json() 
+        rows = data['rows']        
+        for row in rows:
+            doc = row['doc']
+            nameFile = row['key']
+            host = doc['name']
+            if host == self.host:
+                print(f'Get name = {nameFile},  hostname {host}')
+                self.filename = nameFile
+                status = self.getAttachment()
+                if status == True:
+                    print(f'unzip {self.zip_with_path}')
+                    with zipfile.ZipFile(self.zip_with_path, 'r') as zip_ref:                
+                        zip_ref.extractall(self.work_dir)
+                    os.remove(self.zip_with_path)
+
+                else:
+                    print(f'couldnt get file')
+
+
+    #    print(data)
+    
+        # parse data and return document list to fetch attachments.
+        return True
