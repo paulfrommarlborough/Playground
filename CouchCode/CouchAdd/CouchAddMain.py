@@ -30,7 +30,7 @@ def main():
 #       print(jdata)    
         print(f'\nCouch Record ADD: Add Entry, {jdata["name"]}, {jdata["os"]}, {jdata["ip"]}, {jdata["date"]} ')
 
-        cc = couchCurl(ci.username, ci.password, jdata["name"], jdata["os"], jdata["ip"], jdata["date"], jdata["dateadded"], None)
+        cc = couchCurl(ci.server, ci.username, ci.password, jdata["name"], jdata["os"], jdata["ip"], jdata["date"], jdata["dateadded"], None)
         
         # see if we already have it.
 

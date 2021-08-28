@@ -1,1 +1,1 @@
-python CouchAddMain.py --date "2021Aug06" --host PALLADIUM   --os WINDOWS --ip 192.168.5.158 --workdir C:\tools\tmp
+python CouchAddMain.py --date "2021Aug26" --host PALLADIUM   --os WINDOWS --ip 192.168.5.158 --workdir C:\tools\tmp --username admin --password pawz1 --server 192.168.5.158:5984

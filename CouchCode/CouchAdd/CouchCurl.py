@@ -10,11 +10,12 @@ from requests.exceptions import ConnectionError
 
 
 class couchCurl:
-    def __init__(self, username, password, host, os, ip, date, dateadded, zip):
+    def __init__(self, server, username, password, host, os, ip, date, dateadded, zip):
         self.host = host        
         self.os = os
         self.ip = ip
         self.date = date
+        self.server = server 
         self.username = username
         self.password = password
         self.date_added = dateadded
@@ -47,7 +48,7 @@ class couchCurl:
     
     def checkEntry(self):
         self.already_exists = False
-        urlx = f'http://{self.username}:{self.password}@127.0.0.1:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:           
            r = requests.get(urlx)
         except ConnectionError as e:
@@ -74,7 +75,7 @@ class couchCurl:
         print(f'couchCurl.addEntry {self.host}')
         
         # need more info
-        urlx = f'http://{self.username}:{self.password}@127.0.0.1:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:           
            r = requests.put(urlx, data =self.json_data)
         except ConnectionError as e:
@@ -109,7 +110,7 @@ class couchCurl:
         zip_with_path = f'@{self.zip}'
         zip_no_path= f'{self.filename}.zip'
 
-        urlx = f'http://{self.username}:{self.password}@127.0.0.1:5984/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}/{zip_no_path}?rev={self.rev}'
         subprocess.run(['curl', '-vX', 'PUT', urlx, '--data-binary', zip_with_path, '-H', 'Content-Type: application/zip' ] )
         return True
 
@@ -123,7 +124,7 @@ class couchCurl:
         self.buildJson_attach()
         headers = { "content-type":"application/zip" }       
         files = {'file': (self.zip, open(self.zip, 'rb').read(), 'application/zip' )}
-        urlx = f'http://{self.username}:{self.password}@127.0.0.1:5984/ecapfiles/{self.filename}'
+        urlx = f'http://{self.username}:{self.password}@{self.server}/ecapfiles/{self.filename}'
         try:        
            r = requests.post(urlx, headers=headers,files=files,params=self.json_data_attach)
         except ConnectionError as e:

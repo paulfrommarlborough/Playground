@@ -45,6 +45,8 @@ class couchinputs:
         self.parser.add_argument('--date', help='data date')
         self.parser.add_argument('--workdir', help='working directory')
         self.parser.add_argument('--all', help='load all files')
+        self.parser.add_argument('--server', help='couchdb server:port')
+        
         self.parser.add_argument('--username', help='username')
         self.parser.add_argument('--password', help='password')        
         self.parser.add_argument('--input-file', type=argparse.FileType('r'),dest='input_file')        
@@ -79,6 +81,11 @@ class couchinputs:
             self.ip = '127.0.0.1'
         else:
             self.ip = self.args.ip
+
+        if self.args.server is None:            
+            self.server = '127.0.0.1:5984'
+        else:
+            self.server = self.args.server
 
         if self.args.username is None:            
             self.username = 'admin'

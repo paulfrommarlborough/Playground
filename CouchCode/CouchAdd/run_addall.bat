@@ -1,1 +1,1 @@
-python CouchAddMain.py --all all --input C:\tools\couch\nightly\input.json --workdir C:\\tools\\TMP
+python CouchAddMain.py --all all --input C:\tools\couch\nightly\input.json --workdir C:\\tools\\TMP --username admin --password pawz1 --server 192.168.5.158:5984
