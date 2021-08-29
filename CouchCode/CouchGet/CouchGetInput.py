@@ -4,10 +4,9 @@ import json
 from datetime import datetime
 from datetime import timedelta
 
-#
 #  we can have an input file :  say --os Windows --input_file C:\input.json
 #     we can get all os with windows
-#
+
 class couchinputs:
 
     # not type casting the inputs should be string.
@@ -18,6 +17,7 @@ class couchinputs:
         self.operations_list = []                       # MAKE A LIST
         self.parser = argparse.ArgumentParser()
         self.parser.add_argument('--host', help='system name tag')
+        self.parser.add_argument('--yesterday', help='get only yesterday', action="store_true")
         self.parser.add_argument('--os', help='operating system tag')
         self.parser.add_argument('--ip', help='ip address')
         self.parser.add_argument('--date', help='data date')
@@ -38,9 +38,12 @@ class couchinputs:
         print(f'CouchInputs,  validate..., ')
 
         # do we default to yesterday - or None
-        if self.args.date is None:            
-            now = datetime.now() - timedelta(1)
-            self.date = None #now.strftime("20%y%b%d").lower()     
+        if self.args.date is None:  
+            if self.args.yesterday is None:
+                self.date = None          
+            else:
+                now = datetime.now() - timedelta(1)
+                self.date = now.strftime("20%y%b%d").lower()     
         else:
             self.date = self.args.date.lower()
 
