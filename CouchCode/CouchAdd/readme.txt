@@ -23,7 +23,7 @@ CouchAdd Project:                                               24-aug-2021
 "args": ["--host", "palladium", "--os", "WINDOWS", "--ip", "192.168.5.158", "--workdir", "C:\\tools\\TMP", "--date", "2021Aug20" ]
 
 # ALL FILES
-"args": ["--all", "all",  "-username", "admin", "--password", "pawz1", "--workdir", "C:\\tools\\Couch\\Nightly","--input", "C:\\tools\\Couch\\NiGHTLY\\input.json"  ] 
+"args": ["--all", "-username", "admin", "--password", "pawz1", "--workdir", "C:\\tools\\Couch\\Nightly","--input", "C:\\tools\\Couch\\NiGHTLY\\input.json"  ] 
 
 # nightly
 "args": [ "--workdir", "C:\\tools\\Couch\\Nightly","--input", "C:\\tools\\Couch\\Nightly\\input.json"  ] 

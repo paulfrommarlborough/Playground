@@ -35,7 +35,7 @@ class couchinputs:
 
     def __init__(self):        
         print('CouchInputs,  init...')
-        self.all_files = 0
+        self.all_files = False
         self.operations_list = []                       # MAKE A LIST
         self.parser = argparse.ArgumentParser()
         self.parser.add_argument('--host', help='system name tag')
@@ -44,12 +44,12 @@ class couchinputs:
         self.parser.add_argument('--zip', help='zip file to attach')
         self.parser.add_argument('--date', help='data date')
         self.parser.add_argument('--workdir', help='working directory')
-        self.parser.add_argument('--all', help='load all files')
-        self.parser.add_argument('--server', help='couchdb server:port')
-        
+        self.parser.add_argument('--server', help='couchdb server:port')        
         self.parser.add_argument('--username', help='username')
         self.parser.add_argument('--password', help='password')        
         self.parser.add_argument('--input-file', type=argparse.FileType('r'),dest='input_file')        
+        self.parser.add_argument('--all', help='load all files', action="store_true")
+        self.parser.add_argument('--yesterday', help='get only yesterday', action="store_true")
         
 
     def parse(self):  
@@ -61,9 +61,10 @@ class couchinputs:
         # -does zip exist
         print(f'CouchInputs, validate..., ')
     
-        if self.args.date is None:            
-            now = datetime.now() - timedelta(1)
-            self.date = now.strftime("20%y%b%d").lower()     
+        if self.args.date is None: 
+            if self.args.yesterday is True:           
+                now = datetime.now() - timedelta(1)
+                self.date = now.strftime("20%y%b%d").lower()     
         else:
             self.date = self.args.date.lower()
 
@@ -111,17 +112,17 @@ class couchinputs:
         data = None
         if self.args.input_file is not None:
 
-            if self.args.all is None:            
-                self.all_files = None
+            if self.args.all is False:            
+                self.all_files = False
             else:
-                self.all_files = 1
+                self.all_files = True
 
             ##---------------------------------------
             ## if all_files : get all dates... for each .. 
             ## when adding to the operations_list loop through all dates.z
             ##---------------------------------------
             date_list = []
-            if self.all_files == 1:                
+            if self.all_files == True:                
                 gdf = GetDataFile(None,None,None,None)
                 gdf.GetAllDates()
 
@@ -137,7 +138,7 @@ class couchinputs:
 
                 # make operations_list for spcified node(s)
 
-                if self.all_files == 0 or self.all_files == None:       
+                if self.all_files == False:       
                     for i in data['collector_settings']:                   
                         i['date'] = f'{self.date}'
                         i['dateadded'] = datetime.now().strftime("%d-%b-20%y %H:%M")   
@@ -185,7 +186,7 @@ class couchinputs:
                 ## if all_files : get all dates... for the system in question
                 ## when adding to the operations_list loop through all dates.z
             date_list = []
-            if self.all_files == 1:                
+            if self.all_files == True:                
                 gdf = GetDataFile(None,None,None,None)
                 gdf.GetAllDates()
 
