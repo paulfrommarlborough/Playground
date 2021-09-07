@@ -1,0 +1,33 @@
+{
+	"collector_settings": [{
+			"name": "esxi01",
+			"os": "VMware ESX",
+			"ip": "192.168.1.191"
+		},
+		{
+			"name": "esxi02",
+			"os": "VMware ESX",
+			"ip": "192.168.1.190"
+		},
+		{
+			"name": "vsphere01",
+			"os": "VMware ESX",
+			"ip": "192.168.1.235"
+		},
+		{
+			"name": "rgESXi1",
+			"os": "VMware ESX",
+			"ip": "192.168.0.79"
+		},
+		{
+			"name": "rgESXi",
+			"os": "VMware ESX",
+			"ip": "192.168.0.58"
+		},
+		{
+			"name": "ecapdev",
+			"os": "WINDOWS",
+			"ip": "192.168.1.167"
+		}
+	]
+}

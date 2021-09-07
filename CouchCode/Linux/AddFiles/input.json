@@ -1,0 +1,8 @@
+{
+	"collector_settings": [{
+			"name": "vRHEL78",
+			"os": "linux",
+			"ip": "192.168.0.75"
+		}
+	]
+}

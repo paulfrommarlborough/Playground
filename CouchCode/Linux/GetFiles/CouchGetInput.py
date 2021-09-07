@@ -4,7 +4,10 @@ import json
 from datetime import datetime
 from datetime import timedelta
 
-#  we can have an input file :  say --os Windows --input_file C:\input.json
+
+
+#--------------------------------------------------------------------------
+#  we can have an input file :  say --os Windows --input_file input.json
 #     we can get all os with windows
 
 class couchinputs:
@@ -100,14 +103,14 @@ class couchinputs:
         if self.work_dir is None:
             str = "stub.json"
         else:
-            str = f"{self.work_dir}\\stub.json"
+            str = f"{self.work_dir}/stub.json"
         
         try:
             with open(str) as file:            
                 stubdata = json.load(file)
                 newdata = stubdata.copy()
         except:
-            print(f'unable top open {self.work_dir}stub.file')
+            print(f'unable to open {self.work_dir}/{file}')
             return False
         #----------------------------
         # figure out what data to get

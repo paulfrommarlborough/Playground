@@ -1,0 +1,1 @@
+copy *.cpc* C:\"Program files"\perfcap\ecap\monitor\data_vmware\"
