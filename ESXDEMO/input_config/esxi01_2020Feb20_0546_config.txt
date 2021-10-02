@@ -1,21 +1,21 @@
 <CONFIG>
 ConfigVersion:1
+ConfigCollectionTime:Fri Oct 01 19:57:51 2021
 <PERFCAP>
 SoftwareBundle:Hosted
 SoftwareBundleArchitecture:64
-SoftwareProtocol:1110
+SoftwareProtocol:1430
 CollectorName:eCAP Monitor
-CollectorVersion:V14.3-004:Jan 29 2020
+CollectorVersion:V15.0C-005:Jul 13 2021
 CollectorVerbose:0
 CollectorScan:2000
 CollectorPeak:0
-CollectorWrite:120
+CollectorWrite:300
 CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
 CollectorLicenseStatus:Valid
-CollectorLicenseExpire:29-Dec-2020
 CollectorLicenseIssueTo:PERFCAP
-AgentVersion:T14.3-046:Jan 17 2020
-AgentVerbose:1
+AgentVersion:V15.0C-014:Oct 1 2021
+AgentVerbose:0
 AgentPort:1661
 AgentPawzServer:0.0.0.0
 RealtimeInstalled:1
@@ -26,11 +26,12 @@ SystemSerialNumber:2PMZPM1
 SystemModel:PowerEdge T110
 SystemVendor:Dell Inc.
 SystemTimeZone:UTC
-SystemTotalGHZ:9.575939788
+SystemTotalGHZ:9.575939556
 SystemProcessorCount:4
 SystemCPUsockets:1
 SystemCPUcoresPerSocket:4
 SystemCPUthreads:4
+SystemDiskCount:4
 SystemNicCount:1
 SystemHbaCount:6
 SystemMemoryTotalCapacity:8182:MB
@@ -44,4 +45,272 @@ ProcessorMaxClock:2393
 <SETTINGS_ECAP>
 Log Details~0
 <ENDSETTINGS_ECAP>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F329335)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333239333335574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local HL-DT-ST CD-ROM (mpx.vmhba35:C0:T0:L0)
+DiskModel:DVD-ROM DH20N   
+DiskDeviceType:cdrom
+DiskUuid:0005000000766d68626133353a303a30
+DiskVendor:HL-DT-ST
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F319993)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333139393933574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F318871)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333138383731574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DATASTORE>
+DatastoreName:datastore2_esxi01
+DatastoreUsedGb:11400.0
+DatastoreTotalGb:22700.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore3_esxi01
+DatastoreUsedGb:14200.0
+DatastoreTotalGb:22800.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore1_esxi01
+DatastoreUsedGb:10300.0
+DatastoreTotalGb:22700.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:NfsDatastore1
+DatastoreUsedGb:41300.0
+DatastoreTotalGb:46400.0
+<ENDDATASTORE>
+<GUEST>
+GuestName:e01evax64
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01-Win2016
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01ubuntu14043
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01sun32
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01winesx01
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01suse11
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:1
+<ENDGUEST>
+<GUEST>
+GuestName:e01.vm.emc.x64
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01rhel55
+GuestPower:On
+GuestMemory:368
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01.redhat6_x64
+GuestPower:On
+GuestMemory:512
+GuestVCpus:1
+<ENDGUEST>
+<ENDCONFIG>
+<CONFIG>
+ConfigVersion:1
+ConfigCollectionTime:Fri Oct 01 19:57:51 2021
+<PERFCAP>
+SoftwareBundle:Hosted
+SoftwareBundleArchitecture:64
+SoftwareProtocol:1430
+CollectorName:eCAP Monitor
+CollectorVersion:V15.0C-005:Jul 13 2021
+CollectorVerbose:0
+CollectorScan:2000
+CollectorPeak:0
+CollectorWrite:300
+CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
+CollectorLicenseStatus:Valid
+CollectorLicenseIssueTo:PERFCAP
+AgentVersion:V15.0C-014:Oct 1 2021
+AgentVerbose:0
+AgentPort:1661
+AgentPawzServer:0.0.0.0
+RealtimeInstalled:1
+<ENDPERFCAP>
+<SYSTEM>
+SystemName:esxi01.perfcap.com
+SystemSerialNumber:2PMZPM1
+SystemModel:PowerEdge T110
+SystemVendor:Dell Inc.
+SystemTimeZone:UTC
+SystemTotalGHZ:9.575939556
+SystemProcessorCount:4
+SystemCPUsockets:1
+SystemCPUcoresPerSocket:4
+SystemCPUthreads:4
+SystemDiskCount:4
+SystemNicCount:1
+SystemHbaCount:6
+SystemMemoryTotalCapacity:8182:MB
+SystemOS:VMware ESXi
+SystemOSversion:VMware ESXi 6.0.0 build-3620759
+<ENDSYSTEM>
+<PROCESSOR>
+ProcessorName:Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz
+ProcessorMaxClock:2393
+<ENDPROCESSOR>
+<SETTINGS_ECAP>
+Log Details~0
+<ENDSETTINGS_ECAP>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F329335)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333239333335574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local HL-DT-ST CD-ROM (mpx.vmhba35:C0:T0:L0)
+DiskModel:DVD-ROM DH20N   
+DiskDeviceType:cdrom
+DiskUuid:0005000000766d68626133353a303a30
+DiskVendor:HL-DT-ST
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F319993)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333139393933574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD2502ABYS2D18B7A0________________________WD2DWCAT1F318871)
+DiskModel:WDC WD2502ABYS-1
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341543146333138383731574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DATASTORE>
+DatastoreName:datastore2_esxi01
+DatastoreUsedGb:11400.0
+DatastoreTotalGb:22700.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore3_esxi01
+DatastoreUsedGb:14200.0
+DatastoreTotalGb:22800.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore1_esxi01
+DatastoreUsedGb:10300.0
+DatastoreTotalGb:22700.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:NfsDatastore1
+DatastoreUsedGb:41300.0
+DatastoreTotalGb:46400.0
+<ENDDATASTORE>
+<GUEST>
+GuestName:e01evax64
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01-Win2016
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01ubuntu14043
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01sun32
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01winesx01
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e01suse11
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:1
+<ENDGUEST>
+<GUEST>
+GuestName:e01.vm.emc.x64
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01rhel55
+GuestPower:On
+GuestMemory:368
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01.redhat6_x64
+GuestPower:On
+GuestMemory:512
+GuestVCpus:1
+<ENDGUEST>
 <ENDCONFIG>

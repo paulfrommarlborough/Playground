@@ -1,21 +1,21 @@
 <CONFIG>
 ConfigVersion:1
+ConfigCollectionTime:Fri Oct 01 19:57:45 2021
 <PERFCAP>
 SoftwareBundle:Hosted
 SoftwareBundleArchitecture:64
-SoftwareProtocol:1110
+SoftwareProtocol:1430
 CollectorName:eCAP Monitor
-CollectorVersion:V14.3-004:Jan 29 2020
+CollectorVersion:V15.0C-005:Jul 13 2021
 CollectorVerbose:0
 CollectorScan:2000
 CollectorPeak:0
 CollectorWrite:120
 CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
 CollectorLicenseStatus:Valid
-CollectorLicenseExpire:29-Dec-2020
 CollectorLicenseIssueTo:PERFCAP
-AgentVersion:T14.3-046:Jan 17 2020
-AgentVerbose:1
+AgentVersion:V15.0C-014:Oct 1 2021
+AgentVerbose:0
 AgentPort:1661
 AgentPawzServer:0.0.0.0
 RealtimeInstalled:1
@@ -26,11 +26,12 @@ SystemSerialNumber:CPNN9Z1
 SystemModel:PowerEdge T110 II
 SystemVendor:Dell Inc.
 SystemTimeZone:UTC
-SystemTotalGHZ:12.371895772
+SystemTotalGHZ:12.371896248
 SystemProcessorCount:4
 SystemCPUsockets:1
 SystemCPUcoresPerSocket:4
 SystemCPUthreads:4
+SystemDiskCount:2
 SystemNicCount:1
 SystemHbaCount:5
 SystemMemoryTotalCapacity:32757:MB
@@ -44,4 +45,68 @@ ProcessorMaxClock:3092
 <SETTINGS_ECAP>
 Log Details~0
 <ENDSETTINGS_ECAP>
+<DISK>
+DiskName:Dell Serial Attached SCSI Disk (naa.600508e0000000000a6ef833446d430c)
+DiskModel:Virtual Disk    
+DiskDeviceType:disk
+DiskUuid:0200000000600508e0000000000a6ef833446d430c566972747561
+DiskVendor:Dell    
+DiskvStorageSupport:vStorageUnknown
+DiskScsiLevel:6
+<ENDDISK>
+<DISK>
+DiskName:Local PLDS CD-ROM (mpx.vmhba1:C0:T0:L0)
+DiskModel:DVD-ROM DH-16D7S
+DiskDeviceType:cdrom
+DiskUuid:0005000000766d686261313a303a30
+DiskVendor:PLDS    
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DATASTORE>
+DatastoreName:datastore1_esxi02
+DatastoreUsedGb:83900.0
+DatastoreTotalGb:92300.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:NfsDatastore1
+DatastoreUsedGb:39000.0
+DatastoreTotalGb:46400.0
+<ENDDATASTORE>
+<GUEST>
+GuestName:e02PawzLite
+GuestPower:On
+GuestMemory:8192
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:Neon
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:neon_Clone
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vFINDIT
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:e02-uk-db
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:silicon
+GuestPower:On
+GuestMemory:6144
+GuestVCpus:2
+<ENDGUEST>
 <ENDCONFIG>

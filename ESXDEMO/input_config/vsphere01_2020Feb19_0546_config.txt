@@ -1,36 +1,172 @@
 <CONFIG>
 ConfigVersion:1
+ConfigCollectionTime:Fri Oct 01 19:57:50 2021
 <PERFCAP>
 SoftwareBundle:Hosted
 SoftwareBundleArchitecture:64
-SoftwareProtocol:1110
+SoftwareProtocol:1430
 CollectorName:eCAP Monitor
-CollectorVersion:V14.3-001:Aug 15 2019
+CollectorVersion:V15.0C-005:Jul 13 2021
 CollectorVerbose:0
 CollectorScan:2000
 CollectorPeak:0
 CollectorWrite:120
 CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
 CollectorLicenseStatus:Valid
-CollectorLicenseExpire:29-Dec-2020
 CollectorLicenseIssueTo:PERFCAP
-AgentVersion:T14.3-046:Jan 17 2020
-AgentVerbose:1
+AgentVersion:V15.0C-014:Oct 1 2021
+AgentVerbose:0
 AgentPort:1661
 AgentPawzServer:0.0.0.0
 RealtimeInstalled:1
 <ENDPERFCAP>
 <SYSTEM>
-SystemName:vsphere01
-SystemSerialNumber:
-SystemModel:
-SystemVendor:
-SystemTimeZone:
-SystemMemoryTotalCapacity::MB
-SystemOS:
-SystemOSversion:
+SystemName:vsphere01.perfcap.com
+SystemSerialNumber:USE939N3GH
+SystemModel:ProLiant DL320 G6
+SystemVendor:Hewlett-Packard
+SystemTimeZone:UTC
+SystemTotalGHZ:9.06698736
+SystemProcessorCount:4
+SystemCPUsockets:1
+SystemCPUcoresPerSocket:4
+SystemCPUthreads:8
+SystemDiskCount:5
+SystemNicCount:2
+SystemHbaCount:4
+SystemMemoryTotalCapacity:24565:MB
+SystemOS:VMware ESXi
+SystemOSversion:VMware ESXi 6.0.0 build-3620759
 <ENDSYSTEM>
 <PROCESSOR>
-ProcessorName:
+ProcessorName:Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz
+ProcessorMaxClock:2266
 <ENDPROCESSOR>
+<SETTINGS_ECAP>
+Log Details~0
+<ENDSETTINGS_ECAP>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD1003FBYX2D01Y7B1________________________WD2DWCAW35992811)
+DiskModel:WDC WD1003FBYX-0
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341573335393932383131574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____GB0250EAFYK_____________________________WCAT1D311739________)
+DiskModel:GB0250EAFYK     
+DiskDeviceType:disk
+DiskUuid:01000000005743415431443331313733392020202020202020474230323530
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____WDC_WD1003FBYX2D01Y7B1________________________WD2DWCAW35953292)
+DiskModel:WDC WD1003FBYX-0
+DiskDeviceType:disk
+DiskUuid:0100000000202020202057442d574341573335393533323932574443205744
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local HL-DT-ST CD-ROM (mpx.vmhba1:C0:T0:L0)
+DiskModel:DVD-ROM DU10N   
+DiskDeviceType:cdrom
+DiskUuid:0005000000766d686261313a303a30
+DiskVendor:HL-DT-ST
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:Local ATA Disk (t10.ATA_____GB0250EAFYK_____________________________WCAT1D313931________)
+DiskModel:GB0250EAFYK     
+DiskDeviceType:disk
+DiskUuid:01000000005743415431443331333933312020202020202020474230323530
+DiskVendor:ATA     
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DATASTORE>
+DatastoreName:vdatastore4_vsphere01
+DatastoreUsedGb:37200.0
+DatastoreTotalGb:93100.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:vdatastore1_vsphere01
+DatastoreUsedGb:19100.0
+DatastoreTotalGb:22700.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:vdatastore2_vsphere01
+DatastoreUsedGb:17600.0
+DatastoreTotalGb:23100.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:NfsDatastore1
+DatastoreUsedGb:39000.0
+DatastoreTotalGb:46400.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:vdatastore3_vsphere01
+DatastoreUsedGb:8500.0
+DatastoreTotalGb:93100.0
+<ENDDATASTORE>
+<GUEST>
+GuestName:vgold
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:1
+<ENDGUEST>
+<GUEST>
+GuestName:vRHEL64
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:vWin7x64
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:ol64
+GuestPower:On
+GuestMemory:512
+GuestVCpus:4
+<ENDGUEST>
+<GUEST>
+GuestName:sles11X64
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:e01amdx
+GuestPower:On
+GuestMemory:640
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:vPretoria
+GuestPower:On
+GuestMemory:8192
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:vPawzEsx
+GuestPower:On
+GuestMemory:4096
+GuestVCpus:4
+<ENDGUEST>
+<GUEST>
+GuestName:foolsgold
+GuestPower:On
+GuestMemory:1024
+GuestVCpus:1
+<ENDGUEST>
 <ENDCONFIG>

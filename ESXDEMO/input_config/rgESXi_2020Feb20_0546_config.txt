@@ -1,20 +1,20 @@
 <CONFIG>
 ConfigVersion:1
+ConfigCollectionTime:Fri Oct 01 16:48:41 2021
 <PERFCAP>
 SoftwareBundle:Hosted
 SoftwareBundleArchitecture:64
-SoftwareProtocol:1110
+SoftwareProtocol:1430
 CollectorName:eCAP Monitor
-CollectorVersion:V14.3-004:Jan 29 2020
+CollectorVersion:V15.0C-005:Jul 13 2021
 CollectorVerbose:0
 CollectorScan:2000
 CollectorPeak:0
-CollectorWrite:60
+CollectorWrite:120
 CollectorDataPath:C:\Program Files\PerfCap\eCAP\Monitor\data_vmware
 CollectorLicenseStatus:Valid
-CollectorLicenseExpire:29-Dec-2020
 CollectorLicenseIssueTo:PERFCAP
-AgentVersion:T14.3-046:Jan 17 2020
+AgentVersion:V15.0C-014:Oct 1 2021
 AgentVerbose:1
 AgentPort:1661
 AgentPawzServer:0.0.0.0
@@ -26,11 +26,12 @@ SystemSerialNumber:MXQ0411D91
 SystemModel:ProLiant DL180 G6
 SystemVendor:HP
 SystemTimeZone:UTC
-SystemTotalGHZ:32.001131232
+SystemTotalGHZ:32.00113188
 SystemProcessorCount:12
 SystemCPUsockets:2
 SystemCPUcoresPerSocket:6
 SystemCPUthreads:24
+SystemDiskCount:9
 SystemNicCount:2
 SystemHbaCount:9
 SystemMemoryTotalCapacity:32758:MB
@@ -44,4 +45,166 @@ ProcessorMaxClock:2666
 <SETTINGS_ECAP>
 Log Details~0
 <ENDSETTINGS_ECAP>
+<DISK>
+DiskName:HP Serial Attached SCSI Disk (naa.600508b1001ce2052afee657e2320bf9)
+DiskModel:LOGICAL VOLUME  
+DiskDeviceType:disk
+DiskUuid:0200010000600508b1001ce2052afee657e2320bf94c4f47494341
+DiskVendor:HP      
+DiskvStorageSupport:vStorageUnknown
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel Disk (naa.600c0ff00013341ecb6de25701000000)
+DiskModel:P2000 G3 FC     
+DiskDeviceType:disk
+DiskUuid:0200010000600c0ff00013341ecb6de25701000000503230303020
+DiskVendor:HP      
+DiskvStorageSupport:vStorageSupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel RAID Ctlr (naa.500508b300907b40500508b300907b41)
+DiskModel:MSA CONTROLLER  
+DiskDeviceType:array controller
+DiskUuid:020c000000500508b300907b40500508b300907b414d534120434f
+DiskVendor:HP      
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:4
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel RAID Ctlr (naa.500508b300907b40500508b300907b49)
+DiskModel:MSA CONTROLLER  
+DiskDeviceType:array controller
+DiskUuid:020c000000500508b300907b40500508b300907b494d534120434f
+DiskVendor:HP      
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:4
+<ENDDISK>
+<DISK>
+DiskName:Local TEAC CD-ROM (mpx.vmhba36:C0:T0:L0)
+DiskModel:DV-W28S-VS      
+DiskDeviceType:cdrom
+DiskUuid:0005000000766d68626133363a303a30
+DiskVendor:TEAC    
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel Enclosure Svc Dev (naa.600c0ff000132d0d0000000000000000)
+DiskModel:P2000 G3 FC     
+DiskDeviceType:enclosure
+DiskUuid:020d000000600c0ff000132d0d0000000000000000503230303020
+DiskVendor:HP      
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel Disk (naa.600c0ff00013341ec232505801000000)
+DiskModel:P2000 G3 FC     
+DiskDeviceType:disk
+DiskUuid:0200150000600c0ff00013341ec232505801000000503230303020
+DiskVendor:HP      
+DiskvStorageSupport:vStorageSupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel Disk (naa.600c0ff00013341eb364e15701000000)
+DiskModel:P2000 G3 FC     
+DiskDeviceType:disk
+DiskUuid:0200140000600c0ff00013341eb364e15701000000503230303020
+DiskVendor:HP      
+DiskvStorageSupport:vStorageSupported
+DiskScsiLevel:5
+<ENDDISK>
+<DISK>
+DiskName:HP Fibre Channel Enclosure Svc Dev (naa.600c0ff00013341e0000000000000000)
+DiskModel:P2000 G3 FC     
+DiskDeviceType:enclosure
+DiskUuid:020d000000600c0ff00013341e0000000000000000503230303020
+DiskVendor:HP      
+DiskvStorageSupport:vStorageUnsupported
+DiskScsiLevel:5
+<ENDDISK>
+<DATASTORE>
+DatastoreName:datastore21
+DatastoreUsedGb:233100.0
+DatastoreTotalGb:465600.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore20
+DatastoreUsedGb:318600.0
+DatastoreTotalGb:465600.0
+<ENDDATASTORE>
+<DATASTORE>
+DatastoreName:datastore2
+DatastoreUsedGb:7100.0
+DatastoreTotalGb:278900.0
+<ENDDATASTORE>
+<GUEST>
+GuestName:vServer2016UK
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vTestDc
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vLinuxTarballTest
+GuestPower:On
+GuestMemory:6144
+GuestVCpus:2
+<ENDGUEST>
+<GUEST>
+GuestName:vTestApp
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vsql2008
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vWin2016
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vRHEL78
+GuestPower:On
+GuestMemory:8192
+GuestVCpus:16
+<ENDGUEST>
+<GUEST>
+GuestName:vWin10UK_template
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vCoreAP64
+GuestPower:On
+GuestMemory:8192
+GuestVCpus:6
+<ENDGUEST>
+<GUEST>
+GuestName:vCapacity
+GuestPower:Off
+GuestMemory:0
+GuestVCpus:0
+<ENDGUEST>
+<GUEST>
+GuestName:vUpgradeTest
+GuestPower:On
+GuestMemory:8192
+GuestVCpus:4
+<ENDGUEST>
 <ENDCONFIG>
