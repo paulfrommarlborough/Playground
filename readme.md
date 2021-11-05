@@ -1,6 +1,6 @@
-mypython repository:
+my repository:
 
-just doing some testing of python concepts with some very simple scripts.
+just doing some testing of python/go to NO-SQL and AWS.
 
 Added CouchCode:
 
@@ -19,14 +19,12 @@ Added CouchCode:
        get_allfiles.bat  will get all data files 
 
 
-ESXDemo:
-
-  Code to duplicate input files for PAWZ to simulate ESX loads.
-
-  images are checked in: the source is C++  (elsewhere)
-
-
-InfluxCode:
+Influx:
 
   Starting to look at adding python scripts to add to an Influx Time series database.
+  
+  Take data from PAWZ Server REST and put into INFLUX.   Using python which is a bit slow
+  
+  (investigating GO)
+  
 
