@@ -1,5 +1,0 @@
-fun
-good 
-ok
-dont know
-bye
