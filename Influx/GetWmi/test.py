@@ -5,7 +5,7 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # You can generate a Token from the "Tokens Tab" in the UI
-
+# LOCAL TOKEN - TBD remove from here
 token = "Ki1AhF29mPKOfCi5QbB-osssaQm-9Qd5_W6IvWPIRn4arbTNpy47fMnlqDULals0ZzzAhiS3HiDN7l5E-EZ4pg=="
 org = "perfcap"
 bucket = "pawzTS"

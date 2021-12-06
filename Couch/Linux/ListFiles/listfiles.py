@@ -20,16 +20,14 @@ filedate = filedate.lower()
 
 yesterdays_files = []
 
-url_1 = { 'name':'ecapdev',  'url':'http://admin:pawz1@192.168.1.167:5984/ecapfiles/_all_docs' }
-url_2 = { 'name':'vcoreap64', 'url':'http://admin:pawz1@192.168.0.192:5984/ecapfiles/_all_docs'}
-url_3 = { 'name':'vcoredb64', 'url':'http://admin:pawz1@192.168.0.193:5984/ecapfiles/_all_docs' }
-# url_4 = { 'name':'palladium', 'url':'http://admin:pawz1@192.168.5.158:5984/ecapfiles/_all_docs' }
+url_1 = { 'name':'ecapdev',  'url':'http://admin:pass@192.168.1.167:5984/ecapfiles/_all_docs' }
+url_2 = { 'name':'vcoreap64', 'url':'http://admin:pass@192.168.0.192:5984/ecapfiles/_all_docs'}
+url_3 = { 'name':'vcoredb64', 'url':'http://admin:pass@192.168.0.193:5984/ecapfiles/_all_docs' }
 
 url_dict = {  
         0: url_1,
         1: url_2,
         2: url_3
-#        3: url_4        
 }
 
 for i in range(len(url_dict)):
@@ -47,7 +45,6 @@ for i in range(len(url_dict)):
     if r:
         print(f'Request: {urlx}')
         print(f'Request.status: {r.status_code}')
-
 
         contentJson= r.json()
         total_rows = int(contentJson["total_rows"])
