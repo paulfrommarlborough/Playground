@@ -6,7 +6,7 @@
 HOME="/home/douglas/couch/linux/AddFiles"
 PERFCAP_ROOT="/data/perfcap"
 COUCH_SERVER="192.168.1.167"
-
-python3 CouchAddMain.py --all --input $HOME/input.json --workdir $HOME --username admin --password pawz1 \
+PASSWORD="$1"
+python3 CouchAddMain.py --all --input $HOME/input.json --workdir $HOME --username admin --password $PASSWORD \
   --server $COUCH_SERVER:5984 --rootdir $PERFCAP_ROOT 
 
